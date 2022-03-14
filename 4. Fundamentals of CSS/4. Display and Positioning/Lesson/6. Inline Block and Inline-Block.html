@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inline, Block and Inline Block</title>
+    <style>
+        .rectangle {
+            display: inline-block;
+            width: 200px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    The <p>paragraph</p> itself is a block element. But the <span>span</span> is not.
+</div>
+<h1>Important Facts</h1>
+<ol>
+    <li>Inline display wrap the content of an element tightly around the element's content hence height and width
+        properties of these elements can not be set</li>
+    <li>Block level elements which have the block display value they take the whole horizontal width of the page and dont allow any
+    elements to appear on either side</li>
+    <li>Inline-block display combines features of both inline and block elements.
+        Inline-block elements can appear next to each other and we can specify
+        their dimensions using the width and height properties.
+        Images are the best example of default inline-block elements.</li>
+</ol>
+
+<strong>Example of Inline Block</strong><br>
+<div class="rectangle">
+    <p>I’m a rectangle!</p>
+</div>
+<div class="rectangle">
+    <p>So am I!</p>
+</div>
+<div class="rectangle">
+    <p>Me three!</p>
+</div>
+</body>
+</html>

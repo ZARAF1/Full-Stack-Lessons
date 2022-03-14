@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="demo1" onclick="this.style.backgroundColor='skyblue'">This is a para</p>
+
+<p id="demo2" onclick="changeColor">This is para 2</p>
+<script>
+    document.getElementById("demo2").style.color="red"
+</script>
+
+<p id="demo3" onclick="changeBg(this)">This is para 3</p>
+<script>
+    function changeBg(id){
+        id.style.backgroundColor="teal"
+    }
+</script>
+
+<p id="demo4" onclick="changeBackground(event)">This is para 4</p>
+<script>
+    function changeBackground(e){
+        e.target.style.backgroundColor="yellow"
+    }
+</script>
+
+<h3 id="id02" onclick="changeBground()">This is an example too</h3>
+<script>
+    function changeBground(){
+        document.getElementById('id02').style.backgroundColor='green'
+    }
+</script>
+
+<p id="p03">Is this a para</p>
+<script>
+    document.getElementById('p03').onclick=changeText;
+    function changeText() {
+        this.innerHTML = "Yes it is"
+    }
+</script>
+</body>
+</html>

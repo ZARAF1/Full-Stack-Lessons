@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Hey There how are you!</p>
+<button>test</button>
+<ul>
+    <li id="one">1</li>
+    <li>2</li>
+    <li>3</li>
+</ul>
+<script>
+let listItem = document.createElement('li');
+listItem.id="new";
+listItem.innerHTML="4";
+document.querySelector('ul').appendChild(listItem)
+
+let removeItem=document.getElementById('new');
+document.querySelector('ul').removeChild(removeItem)
+
+
+let buttonElement=document.querySelector('button');
+function changeBg (){
+    buttonElement.style.backgroundColor='pink';
+    let newElement=document.createElement('li');
+    newElement.innerHTML="4";
+    document.querySelector('ul').appendChild(newElement)
+}
+
+buttonElement.onclick=changeBg;
+
+
+</script>
+</body>
+</html>

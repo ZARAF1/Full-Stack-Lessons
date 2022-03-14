@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+<p id="hiddenPara" style="display:none">This is where i hide</p>
+<button id="btn">Reveal something important</button>
+</body>
+
+<script type="module">
+/*importing */
+
+import {toggleHiddenElement,changeToFunkyColor} from "./domFunctions.js";
+
+/*Access the DOM Elements*/
+    let button=document.getElementById('btn');
+    let para=document.getElementById('hiddenPara')
+
+/*Add event listener */
+button.addEventListener('click',()=>{
+    toggleHiddenElement(para);
+    changeToFunkyColor(button);
+})
+</script>
+</html>

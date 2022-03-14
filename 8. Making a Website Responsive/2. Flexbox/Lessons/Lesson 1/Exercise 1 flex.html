@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flex</title>
+    <link href='style.css' rel='stylesheet' />
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet'>
+    <style>
+        html{
+            font-size:16px;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-family: 'Roboto Mono', monospace;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            text-align: center;
+        }
+
+        .container {
+            background-color: whitesmoke;
+        }
+
+        .box {
+            background-color: dodgerblue;
+            height: 100px;
+            width: 100px;
+            border: 1px solid lightgrey;
+        }
+
+        #flex {
+            display:flex;
+        }
+        #block{
+            display: block;
+        }
+
+
+    </style>
+</head>
+
+<body>
+<h1>Display: Flex</h1>
+<div class='container' id='flex'>
+    <div class='box'>
+        <h2>1</h2>
+    </div>
+    <div class='box'>
+        <h2>2</h2>
+    </div>
+    <div class='box'>
+        <h2>3</h2>
+    </div>
+</div>
+<h1>Display: Block</h1>
+<div class='container' id='block'>
+    <div class='box'>
+        <h2>1</h2>
+    </div>
+    <div class='box'>
+        <h2>2</h2>
+    </div>
+    <div class='box'>
+        <h2>3</h2>
+    </div>
+</div>
+</body>
+
+</html>

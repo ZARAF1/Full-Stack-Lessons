@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="intro">I am a star in the making</p>
+<p>Second para text</p>
+<p id="demo"></p>
+
+<script>
+    let paraTagObjectCollection=document.getElementsByTagName("p")
+    let paraIdObject=document.getElementById("demo").innerHTML=paraTagObjectCollection[0].innerHTML
+</script>
+</body>
+</html>

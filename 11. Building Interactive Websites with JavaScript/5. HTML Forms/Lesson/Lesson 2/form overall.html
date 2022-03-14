@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+            text-align: center;
+        }
+        h1{
+            background-color: orange;
+            margin:25px;
+            border-radius: 10px;
+        }
+        hr{
+            width:50%;
+            display: inline-block;
+        }
+        fieldset{
+            padding: 20px;
+        }
+        #main{
+            background-color: #4c7ef3;
+            width:75%;
+            display:inline-block;
+        }
+        body{
+            background-color: #05A8AA;
+        }
+    </style>
+</head>
+<body>
+<div id="main">
+<h1>Davies Burgers are the best!</h1>
+<p>Come and try our different burgers. You will lick your fingers. Guaranteed!</p>
+<hr/>
+<form action="mailto:ali.raffad@gmail.com" method="post">
+    <br/>
+    <br/>
+    <label for="username">User Name</label>
+    <input type="text" name="username"  id="username" minlength="5" maxlength="20">
+    <br/>
+    <br/>
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password">
+    <br/>
+    <br/>
+    <label for="age">Age</label>
+    <input type="number" id="age" name="age" step="2">
+    <br/>
+    <br/>
+    <fieldset>
+
+        <h3>Choose a Topping</h3>
+        <br>
+        <label for="anchovy">Anchovy</label>
+        <input type="checkbox" id="anchovy" name="topping" value="anchovy" checked>
+
+        <label for="olives">Olives</label>
+        <input type="checkbox" id="olives" name="topping" value="olives">
+        <br/>
+        <br/>
+
+        <label for="vol">Volume</label>
+        <input type="range" min="10" max="100" step="1" name="volume" id="vol">
+
+    </fieldset>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+</form>
+</div>
+</body>
+</html>
+

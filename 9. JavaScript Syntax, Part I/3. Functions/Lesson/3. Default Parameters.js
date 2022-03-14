@@ -1,0 +1,20 @@
+// example
+function greeting (name = 'stranger') {
+    console.log(`Hello, ${name}!`)
+}
+
+greeting('Nick') // Output: Hello, Nick!
+greeting() // Output: Hello, stranger!
+
+
+
+
+// another example
+
+function makeShoppingList(item1='milk', item2='bread', item3='eggs'){
+    console.log(`Remember to buy ${item1}`);
+    console.log(`Remember to buy ${item2}`);
+    console.log(`Remember to buy ${item3}`);
+}
+makeShoppingList(undefined, "honey", "cinnamon")
+// we can use undefined as an argument when using default parameters to skip a parameter

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Click to see your fortune</h1>
+<h2 id="fortune"></h2>
+<button>Click Me</button>
+
+<script>
+    let fortunes = ["A beautiful, smart, and loving person will be coming into your life.",
+        "A fresh start will put you on your way.",
+        "A golden egg of opportunity falls into your lap this month.",
+        "A smile is your personal welcome mat.",
+        "All your hard work will soon pay off."
+    ]
+    let buttonElement = document.querySelector('button');
+    buttonElement.addEventListener("click", showFortune)
+
+    function showFortune (){
+        let randomNumber = Math.floor(Math.random()*fortunes.length);
+        let randomFortune = fortunes[randomNumber];
+        let display=document.getElementById('fortune')
+        display.innerHTML=randomFortune;
+        buttonElement.removeEventListener("click", showFortune)
+    }
+
+</script>
+</body>
+</html>

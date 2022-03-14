@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="demo">Click me to change</p>
+<script>
+    document.getElementById("demo").onclick=changeText;
+    function changeText(){
+        this.innerHTML="text has changed"
+    }
+</script>
+</body>
+</html>

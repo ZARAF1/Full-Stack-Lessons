@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>The Element Object</h1>
+<h2>The lastChild Property</h2>
+
+<ul id="myList">
+    <li>Coffee</li>
+    <li>Tea</li>
+</ul>
+
+<p>The HTML content of the list's last child node is:</p>
+<p id="demo"></p>
+
+<p>Whitespaces between elements are considered text nodes.</p>
+<p>If you add whitespace before the closing /ul tag, the result will be "undefined".</p>
+
+<script>
+    let text = document.getElementById("myList").lastChild.innerHTML;
+    document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>

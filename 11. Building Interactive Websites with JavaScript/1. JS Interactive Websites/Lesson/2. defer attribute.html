@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <!--  Add the defer attribute to the script below:  -->
+    <script id="blue" src="turnBlue.js" defer></script>
+</head>
+
+<body>
+<p class="centered" id="logo">Codecademy</p>
+
+We want the “Codecademy” to be blue, not yellow! Each script tag re-styles the Codecademy logo, but the turnYellow.js
+executes last, making the font color 'yellow'. Add a defer attribute to the turnBlue.js script to make it the last
+script that is downloaded and executed.
+<script id="yellow" src="turnYellow.js"></script>
+</body>
+</html>

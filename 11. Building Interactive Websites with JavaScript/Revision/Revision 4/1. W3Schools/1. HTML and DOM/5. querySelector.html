@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="demo">this is some text</p>
+<p>i am a para too</p>
+<p>so am i</p>
+<h1 id="test"></h1>
+<script>
+    const element = document.querySelector("#demo")
+    element.style.backgroundColor = "red"
+    element.style.color = "white";
+
+    //    another example
+    let element1=document.getElementById('test');
+    let tagElementCollectionObject=document.querySelector("p")
+    element1.style.color="red"
+    element1.innerHTML=tagElementCollectionObject.innerHTML
+</script>
+
+</body>
+</html>

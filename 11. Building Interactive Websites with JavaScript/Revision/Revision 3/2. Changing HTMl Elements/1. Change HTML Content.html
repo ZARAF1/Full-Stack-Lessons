@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Change HTML Content</title>
+</head>
+<body>
+<!--1-->
+<p>my name is ali. i like khalibali</p>
+<!--2-->
+<a href="https://www.google.com" id="google">Google</a>
+<!--3-->
+<p id="dynamic"></p>
+<!--4-->
+<p id="streamWriting"></p>
+<script>
+    /*1. Change value of an html element*/
+    const element = document.getElementsByTagName("p");
+    element[0].innerHTML = "Papi Chulo"
+
+    /**2. Change value of an attribute**/
+    const aElement = document.getElementById("google");
+    aElement.innerHTML = "GMail"
+    aElement.href = "https://www.gmail.com"
+
+    /*3. Dynamic HTML Content*/
+    document.getElementById("dynamic").innerHTML = "The date is " + Date()
+
+    /*4. Writing to the stream of input*/
+    document.write("Here i am writing");
+
+</script>
+
+</body>
+</html>

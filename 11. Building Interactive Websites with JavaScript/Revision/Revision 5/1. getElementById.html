@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="intro">This is Ali who is from superman world.</p>
+<p id="demo"></p>
+</body>
+<script>
+  let firstPara = document.getElementById('intro'); // or we can document.getElementById('intro').innerHTML
+  let targetPara = document.getElementById('demo');
+  targetPara.innerHTML='This is what the new para is talking about: ' + firstPara.innerHTML;
+  // if we used above comment implementation then we can use 'This is what the new para is talking about: ' + firstPara without innerHTML
+</script>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .main {
+            background-color: lightgray;
+            display: inline-flex;
+            width:40%; /*shouldnt be 50 percent otherwise main divs will not be adjacent*/
+            justify-content: space-evenly;
+        }
+        .one {
+            background-color: transparent;
+            border: 1px solid;
+            width:40%;
+            height:50vh; /*for creating responsive proptioning when sizing browser*/
+            margin:10px;
+            min-height: 150px;/*in px so it doesnt fall less that a hard coded value*/
+
+        }
+
+        .two {
+            background-color: transparent;
+            border: 1px solid;
+            width:50%;
+            height:50vh; /*for creating responsive proptioning when sizing browser*/
+            margin:10px;
+            min-height: 150px;/*in px so it doesnt fall less that a hard coded value*/
+
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="one"></div>
+    <div class="two"></div>
+</div>
+<div class="main">
+    <div class="one"></div>
+    <div class="two"></div>
+</div>
+</body>
+</html>

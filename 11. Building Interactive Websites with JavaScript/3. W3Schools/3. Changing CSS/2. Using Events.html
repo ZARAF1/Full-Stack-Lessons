@@ -1,0 +1,42 @@
+<!--JavaScript HTML DOM Events-->
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+<!--Using ID on HTML Element and then onclick in JS-->
+<p id="id01">Hello</p>
+<script>
+    document.getElementById('id01').onclick=changeColor;
+    function changeColor(){
+        document.getElementById('id01').style.color="blue"
+    }
+</script>
+<!--Using onclick on HTML element with JS-->
+<h1 onclick="this.style.color='red'">This is a heading which turn red when clicked</h1>
+
+<!--Function call on onclick using this-->
+<h2 onclick="bgcolorChange(this)">This is also an example of event call</h2>
+<script>
+    function bgcolorChange(id){
+        id.style.backgroundColor="pink"
+    }
+</script>
+<!--Function call from onclick in HTML-->
+<h3 id="id02" onclick="changeBg()">This is an example too</h3>
+<script>
+    function changeBg(){
+        document.getElementById('id02').style.backgroundColor='green'
+    }
+</script>
+<!--onclick in JS-->
+<p id="p03">Is this a para</p>
+<script>
+    document.getElementById('p03').onclick=changeText;
+    function changeText() {
+        this.innerHTML = "Yes it is"
+    }
+</script>
+</body>
+</html>

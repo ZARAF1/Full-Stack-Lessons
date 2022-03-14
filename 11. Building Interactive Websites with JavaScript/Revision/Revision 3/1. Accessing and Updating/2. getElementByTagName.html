@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="main">
+    <p>first para</p>
+    <p>second para</p>
+
+    <p id="demo"></p>
+
+</div>
+
+<script>
+    /* getElementByTagName return an array of elements hence we can access them via index */
+    /* getting p elements in element and changing the first para element's value */
+
+    let element = document.getElementsByTagName("p")
+    element[0].innerHTML = "What a para";
+
+    /* setting innerhtml of demo to updated value of first para element */
+    const element2 = document.getElementById("demo");
+    element2.innerHTML = element[0].innerHTML
+
+</script>
+
+</body>
+</html>

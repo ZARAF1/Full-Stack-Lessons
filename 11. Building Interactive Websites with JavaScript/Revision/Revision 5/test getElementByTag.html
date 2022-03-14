@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p style = "display: none" id="para">This is hidden</p>
+<button id="btn">Submit using this button</button>
+</body>
+<script>
+let btnElement = document.getElementById('btn');
+
+const turnButtonRed=()=>{
+    document.getElementById('para').style.display='block';
+    this.style.backgroundColor='pink';
+}
+btnElement.onclick=turnButtonRed;
+</script>
+</html>

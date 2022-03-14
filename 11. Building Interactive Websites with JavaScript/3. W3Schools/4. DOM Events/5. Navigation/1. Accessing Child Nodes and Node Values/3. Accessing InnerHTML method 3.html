@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul id="mainList">
+    <li id="subList">One</li>
+    <li>Two</li>
+    <li>Three</li>
+</ul>
+<p id="demo"></p>
+<script>
+    let demoPara=document.getElementById("demo");
+    let getElementValue=document.getElementById('subList').firstChild.nodeValue;
+    demoPara.innerHTML=getElementValue
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!--
+Accessing the first child can also be done like this:
+
+myTitle = document.getElementById("demo").childNodes[0].nodeValue;
+
+-->
+
+<html>
+<body>
+<div id="division">
+<h1 id="id01">My First Page</h1>
+<p id="id02">Hello!</p>
+</div>
+<script>
+    let element1 = document.getElementById("id01").childNodes[0].nodeValue;
+        let element2 = document.getElementById("id02")
+    // child node is the text node of id01 thats why
+   element2.innerHTML=element1
+
+</script>
+
+</body>
+</html>

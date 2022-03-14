@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Relative Position</title>
+    <style>
+        .parent{
+            width:500px;
+            height:500px;
+            background-color: #979797;
+        }
+
+        .child1{
+            width:100px;
+            height:100px;
+            background-color: #ec3636;
+            position:relative;
+
+        }
+        .child2{
+            width: 100px;
+            height: 100px;
+            background-color: #117bff;
+            position:relative;
+            left:25px;
+
+        }
+        .child3{
+            width:100px;
+            height:100px;
+            background-color: chartreuse;
+            position:relative;
+            left: 50px;
+            bottom:50px;
+
+        }
+    </style>
+</head>
+<body>
+<pre><h2>
+If a child element has an absolute value then the parent element will behave as if the child isn’t there at all:
+        .element {
+                position: absolute;
+                }
+And when we try to set other values such as left, bottom, and right we’ll find that the child element is responding not to the dimensions of its parent, but the document:
+        .element {
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 0;
+                }
+To make the child element positioned absolutely from its parent element we need to set this on the parent element itself:
+            .parent {
+              position: relative;
+            }
+Now properties such as left, right, bottom and top will refer to the parent element, so that if we make the child element transparent we can see it sitting right at the bottom of the parent:
+
+    </h2>
+</pre>
+<div class="parent">
+    <div class="child1"></div>
+    <div class="child2"></div>
+    <div class="child3"></div>
+</div>
+</body>
+</html>

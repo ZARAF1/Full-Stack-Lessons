@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function changeBG(){
+        document.getElementById('demo').style.backgroundColor="maroon"
+        document.getElementById('demo').style.color="white"
+        document.getElementById('demo').style.borderRadius='5px'
+        document.getElementById('demo').innerHTML=Date();
+        document.getElementById('demo').style.textAlign="center"
+        }
+
+</script>
+<h1 id="demo" onclick="changeBG()">Time Display</h1>
+</body>
+</html>

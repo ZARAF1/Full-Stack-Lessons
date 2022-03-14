@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <p id="intro">I am a star in the making</p>
+    <p>Second para text</p>
+    <p id="demo"></p>
+</div>
+<script>
+    const element = document.querySelectorAll("div>p");
+    document.getElementById("demo").innerHTML = "the first para says " + element[0].innerHTML;
+</script>
+
+</body>
+</html>

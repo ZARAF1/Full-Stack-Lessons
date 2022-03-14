@@ -1,0 +1,40 @@
+
+h1.banner{
+    background-image: url("images/pattern.jpeg");
+    text-align: center;
+    font-size: 150px;
+    color:khaki;
+    height:25%;
+    padding:50px;
+}
+h1,h2,h3,p{
+    font-family: Helvetica;
+}
+h2.brushesHeading{
+    font-size: 32px;
+    font-weight: bold;
+    color:white;
+    background-color: mediumspringgreen;
+}
+h2.framesHeading{
+    font-size: 32px;
+    font-weight: bold;
+    color:white;
+    background-color: lightcoral;
+}
+h2.paintHeading{
+    font-size: 32px;
+    font-weight: bold;
+    color:white;
+    background-color: skyblue;
+}
+figure{
+    margin:0px;
+}
+ img.hacksaw,img.airframes,img.finnishpaints {
+     margin: inherit
+ }
+ span{
+     font-weight: bold;
+      color:blue;
+ }

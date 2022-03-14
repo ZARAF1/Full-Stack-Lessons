@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="p01">This is a paragraph</p>
+<script>
+    let para = document.getElementById('p01');
+    para.onclick=changeColor;
+
+    function changeColor(){
+        this.style.backgroundColor="yellow";
+        this.style.fontWeight='bold';
+    }
+</script>
+</body>
+</html>

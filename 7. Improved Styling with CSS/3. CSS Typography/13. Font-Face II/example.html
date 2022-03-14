@@ -1,0 +1,347 @@
+<!--
+
+We can modify our @font-face rule to use local font files as well. We can supply the user with the desired font family and host it along with our site instead of depending on a different site.
+
+@font-face {
+  font-family: "Roboto";
+  src: url(fonts/Roboto.woff2) format('woff2'),
+       url(fonts/Roboto.woff) format('woff'),
+       url(fonts/Roboto.tff) format('truetype');
+}
+Here, you’ll notice:
+
+The main difference is the use of a relative filepath instead of a web URL.
+
+We add a format for each file to specify which font to use. Different browsers support different font types, so providing multiple font file options will support more browsers.
+
+As of now .woff2 appears to be the way of the future, due to greatly reduced file sizes and improved performance, but many browsers still don’t support it. There are lots of great sources to find fonts to use locally, such as Font Squirrel.
+
+Instructions
+1.
+In the fonts/ directory, you’ll notice that we have added several local font files.
+
+Let’s change the typography of the banner, using local font files. If you open up the fonts/ directory using the file navigator in the code editor, you’ll notice that we have added local font files Glegoo-Regular.ttf and Glegoo-Bold.ttf.
+
+At the top of style.css, create a selector using the @font-face property and give it the font family Glegoo.
+
+Checkpoint 2 Passed
+2.
+Within the @font-face rule, add a src attribute with the relative path of the file Glegoo-Regular.ttf and a format of truetype. Make sure to include this path in the url() parentheses.
+
+Checkpoint 3 Passed
+
+Stuck? Get a hint
+3.
+Using the selector that targets the paragraph nested within the banner class, add the font family Glegoo and a font size of 20px.
+
+Reload the page to see the changes in the browser.
+
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Typography Blog</title>
+
+    <style>
+        /* Universal Styles */
+        @font-face {
+            font-family:'Glegoo';
+            src:url(../fonts/Glegoo-Regular.ttf) format('truetype');}
+        @font-face {
+            font-family: 'Space Mono';
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://fonts.gstatic.com/s/spacemono/v6/i7dPIFZifjKcF5UAWdDRYEF8RQ.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        @font-face {
+            font-family: 'Space Mono';
+            font-style: normal;
+            font-weight: 700;
+            src: url(https://fonts.gstatic.com/s/spacemono/v6/i7dMIFZifjKcF5UAWdDRaPpZUFWaHg.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+        html {
+            font-size: 16px;
+            font-family: "Arial", sans-serif;
+        }
+
+        body {
+            background-color: #F2F2F2;
+        }
+
+        h1 {
+            color: white;
+            font-size: 28px;
+            font-family:Georgia;
+            text-transform:uppercase;
+            text-align:center;
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 2.5;
+            font-family:Georgia;
+            letter-spacing:0.9em;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        p {
+            margin: 16px 0;
+            font-family:Helvetica;
+            word-spacing:1.5em;
+            font-family:Glegoo;
+            font-size:20px;
+        }
+
+        strong {
+            font-weight: bold;
+        }
+
+        #serif, /* Offset linked sections to account for header. */
+        #sans,
+        #mono {
+            padding-top: 77px;
+            margin-top: -77px;
+        }
+
+        /* Header */
+
+        .header {
+            font-family: "Arial", sans-serif;
+            font-size: 14px;
+            line-height: 1.25;
+            background-color: #fff;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            font-weight:900;
+        }
+
+        .header li {
+            display:inline-block;
+
+        }
+
+        .header a {
+            display: block;
+            color: #4A4A4A;
+            padding: 30px 20px;
+        }
+
+        a.home {
+            color: #4D00FF;
+        }
+
+
+        /* Banner Section */
+
+        .banner {
+            background-color: #4D00FF;
+            padding: 100px 0;
+            margin-top: 77px;
+            text-align: center;
+        }
+
+        .banner p {
+            border-top: 1px solid #fff;
+            border-bottom: 1px solid #fff;
+            padding: 10px;
+            color: #ffffff;
+            font-weight:bold;
+            line-height:1.4;
+        }
+
+        /* Editorial Sections */
+
+        .editorial {
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+            color: #4C4C4C;
+        }
+
+        /* Font Card Sections */
+        .space .sample .text {
+            font-family: 'Space Mono', monospace;
+        }
+        .garamond .sample .text{
+            font-family:Garamond, serif;
+        }
+        .helvetica .sample .text{
+            font-family:Helvetica, sans-serif;
+        }
+        .font-card {
+            background-color: #ffffff;
+            margin: 50px 0;
+            padding: 20px 50px;
+        }
+
+        .font-card .creator {
+            font-size: 20px;
+            line-height: 1.25;
+            font-style: italic;
+        }
+
+        .sample {
+            display: inline-block;
+            padding: 0 20px;
+            margin: 20px;
+        }
+
+        .sample h2 {
+            line-height: 1.5;
+        }
+
+        .sample .text {
+            color: #4D00FF;
+            font-size: 100px;
+        }
+
+        /* Add styles for the Garamond font here */
+
+        /* Add styles for the Helvetica font here */
+
+        /* Add styles for the Space Mono font here */
+
+        .bold {
+            font-weight: 900;
+        }
+
+        .regular {
+            font-weight: normal;
+        }
+
+        .italic {
+            font-weight: normal;
+            font-style: italic;
+        }
+
+        /* Media Queries */
+
+        @media only screen and (max-width: 535px) {
+            .header {
+                font-size: 14px;
+            }
+
+            .header a {
+                padding: 30px 20px;
+            }
+
+            a.home {
+                display: none;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<nav class="header">
+    <ul>
+        <li><a class="home" href="#top">FAVORITE FONTS</a></li>
+        <li><a class="pagelink" href="#serif">SERIF</a></li>
+        <li><a class="pagelink" href="#sans">SANS-SERIF</a></li>
+        <li><a class="pagelink" href="#mono">MONOSPACED</a></li>
+    </ul>
+</nav>
+
+<!-- Banner Section -->
+<div class="banner">
+    <h1>Typography</h1>
+    <p>While typography has been practiced for many centuries, digital font design is a relatively new discipline. There are some great examples of old-school fonts (also called typefaces) which have been adapted for use on digital displays. However, I would like to highlight a few of my favorite fonts that were created with screens in mind.</p>
+</div>
+
+<!-- Serif Section -->
+<div id="serif">
+
+    <!-- Editorial Section - Serif -->
+    <div class="editorial">
+        <h2>Serif</h2>
+        <p>Serifs are the small features at the end of strokes within letters. These features are <strong>functional as well as decorative</strong>. Serif fonts are widely used for body text (eg. articles) because they are considered easier to read than sans-serif fonts in print.</p>
+        <p><em>Serif fonts can often create a feeling of traditionalism and antiquity, due to their common use in printed materials for many years.</em></p>
+    </div>
+
+    <!-- Font Card - Serif -->
+    <div class="font-card garamond">
+        <h2>Garamond</h2>
+        <p class="creator">by Claude Garamond (16th Century)</p>
+        <div class="garamond">
+        <span class="sample">
+          <h2>Bold</h2>
+          <span class="bold text">Abc</span>
+        </span>
+            <span class="sample">
+          <h2>Regular</h2>
+          <span class="regular text">Abc</span>
+        </span>
+            <span class="sample">
+          <h2>Italic</h2>
+          <span class="italic text">Abc</span>
+        </span>
+        </div>
+    </div>
+</div>
+
+<!-- Sans-Serif Section -->
+<div id="sans">
+
+    <!-- Editorial Section - Sans-Serif -->
+    <div class="editorial">
+        <h2>Sans-Serif</h2>
+        <p>Sans-Serif ("without serif") describes fonts with characters which lack flourishes at the ends of the strokes. Sans-serif fonts have become the most prevalent for display of text on computer screens, as on lower-resolution digital displays, fine details like serifs may disappear or appear too large.</p>
+        <p><em>Sans-serif fonts are often used to project an image of simplicity, modernity or minimalism.</em></p>
+    </div>
+
+    <!-- Font Card - Sans-Serif -->
+    <div class="font-card">
+        <h2>Helvetica</h2>
+        <p class="creator">by Max Miedinger & Eduard Hoffman (1957)</p>
+        <div class="helvetica">
+        <span class="sample">
+          <h2>Bold</h2>
+          <span class="bold text">Abc</span>
+        </span>
+            <span class="sample">
+          <h2>Regular</h2>
+          <span class="regular text">Abc</span>
+        </span>
+        </div>
+    </div>
+</div>
+
+<!-- Monospaced Section -->
+<div id="mono">
+
+    <!-- Editorial - Monospaced -->
+    <div class="editorial">
+        <h2>Monospaced</h2>
+        <p>A monospaced font's characters each occupy the same amount of horizontal space. This contrasts with most fonts, where the letters and spacings have different widths. For example, the two high-use letters "I" and "E" do not need the same footprint. The first monospaced Western typefaces were designed for typewriters.</p>
+        <p><em>Many text editors (like those used to write computer code) use monospaced fonts, which aid in distinguishing between potentially similar characters (like "l" and "1") and in counting the number of characters in a line.</em></p>
+    </div>
+
+    <!-- Font Card - Monospaced -->
+    <div class="font-card">
+        <h2>Space Mono</h2>
+        <p class="creator">by Colophon Foundry (2016)</p>
+        <div class="space">
+        <span class="sample">
+          <h2>Bold</h2>
+          <span class="bold text">Abc</span>
+        </span>
+            <span class="sample">
+          <h2>Regular</h2>
+          <span class="regular text">Abc</span>
+        </span>
+        </div>
+    </div>
+</div>
+</body>
+</html>

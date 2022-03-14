@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--on the same element-->
+<p id="p01">This is a para</p>
+</body>
+<script>
+    let element=document.getElementById('p01')
+    //using anonymous function as event handler function
+    element.addEventListener('click',function(e){
+        e.target.style.backgroundColor="red"
+    })
+</script>
+</html>

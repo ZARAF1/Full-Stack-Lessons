@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<!--Using this to reference same element-->
+<!--Example 1-->
+<p onclick="this.innerHTML='Beebly Boops'">Who am I. click to reveal!</p>
+
+<!--Example 2-->
+<p onclick="displayDate(this)">This is the second example</p>
+
+<!--Example 3-->
+<p onclick="this.innerHTML=document.querySelector('p').innerHTML">click me to display text of first para in page</p>
+
+<script>
+    function displayDate(id){
+        id.target.innerHTML=Date();
+    }
+</script>
+</body>
+</html>

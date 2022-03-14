@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1> Your fortune displays here bugger!!!!!!!</h1>
+<p id="displayFortune"></p>
+<button id="fortuneButton">Generate New Fortune</button>
+<script>
+let fortuneArray = ["A beautiful, smart, and loving person will be coming into your life.",
+                "A fresh start will put you on your way.",
+                "A golden egg of opportunity falls into your lap this month.",
+                "A smile is your personal welcome mat.",
+                "All your hard work will soon pay off."
+    ]
+
+let fortune=document.getElementById('displayFortune');
+let button=document.getElementById('fortuneButton');
+
+let fortuneSelector=()=>{
+    let randomNumber = Math.floor(Math.random()*fortuneArray.length);
+    fortune.innerHTML=fortuneArray[randomNumber];
+    button.removeEventListener('click',fortuneSelector)
+
+}
+
+button.addEventListener('click',fortuneSelector)
+ </script>
+</body>
+</html>

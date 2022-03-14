@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="main">
+    <p id="one">One</p>
+    <p id="two">Two</p>
+    <p id="demo"></p>
+</div>
+<script>
+    /*using querySelector*/
+    let objRef = document.querySelector("div>p")
+    objRef.innerHTML = "What a para"
+
+    /*using querySelectorAll*/
+    let objectReference  = document.querySelectorAll("p")
+    objectReference[0].style.fontVariant="small-caps"
+</script>
+</body>
+</html>

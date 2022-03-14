@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Absolute</title>
+    <style>
+        .parent{
+            background-color: #e8e8e8;
+            width:500px;
+            height:500px;
+
+        }
+
+        .child1{
+            width:100px;
+            height:100px;
+            background-color: #ec3636 ;
+            position:absolute;
+            left:100px;
+        }
+
+        .child2{
+            width: 100px;
+            height: 100px;
+            background-color: #05A8AA;
+
+        }
+
+        .child3{
+            width:100px;
+            height:100px;
+            background-color: #242f44;
+        }
+
+        .anotherParent{
+            background-color: #e8e8e8;
+            width:500px;
+            height:500px;
+            position: relative;
+        }
+
+        .childA{
+            width:100px;
+            height:100px;
+            background-color: #ec3636 ;
+            position:absolute;
+            left:100px;
+        }
+
+        .childB{
+            width: 100px;
+            height: 100px;
+            background-color: #05A8AA;
+
+        }
+
+        .childC{
+            width:100px;
+            height:100px;
+            background-color: #242f44;
+        }
+    </style>
+</head>
+<body>
+<div class="parent">
+    <p>When Parent not set to relative the child will adjust position to document </p>
+    <div class="child1"></div>
+    <div class="child2"></div>
+    <div class="child3"></div>
+</div>
+<br>
+<br>
+
+<div class="anotherParent">
+    <p>When parent set to relative children adjust position to parent </p>
+    <div class="childA"></div>
+    <div class="childB"></div>
+    <div class="childC"></div>
+</div>
+</body>
+</html>

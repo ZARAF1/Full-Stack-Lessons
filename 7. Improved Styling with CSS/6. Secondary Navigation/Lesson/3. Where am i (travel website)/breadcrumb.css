@@ -1,0 +1,15 @@
+.breadcrumb li{
+    display:inline;
+    padding: 10px;
+}
+.breadcrumb a{
+    text-decoration:none;
+}
+.breadcrumb a:hover{
+    color:red;
+}
+.breadcrumb li+li::before{
+    content:">";
+    color:gray;
+}
+

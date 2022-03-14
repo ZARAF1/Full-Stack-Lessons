@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Relative Position</title>
+    <style>
+        .parent{
+            width:500px;
+            height:500px;
+            background-color: #979797;
+        }
+
+        .child1{
+            width:100px;
+            height:100px;
+            background-color: #ec3636;
+            position:relative;
+
+        }
+        .child2{
+            width: 100px;
+            height: 100px;
+            background-color: #117bff;
+            position:relative;
+            left:25px;
+
+        }
+        .child3{
+            width:100px;
+            height:100px;
+            background-color: chartreuse;
+            position:relative;
+            left: 50px;
+            bottom:50px;
+        }
+        #fixed{
+            /*a more specific rule*/
+            position:fixed;
+            background-color: #242f44;
+
+        }
+    </style>
+</head>
+<body>
+<div class="parent">
+    <div class="child1" id="fixed"></div>
+    <div class="child2"></div>
+    <div class="child3"></div>
+    <div class="child1"></div>
+    <div class="child2"></div>
+    <div class="child3"></div>
+    <div class="child1"></div>
+    <div class="child2"></div>
+    <div class="child3"></div>
+    <div class="child1"></div>
+    <div class="child2"></div>
+    <div class="child3"></div>
+    <div class="child1"></div>
+    <div class="child2"></div>
+    <div class="child3"></div>
+    <div class="child1"></div>
+    <div class="child2"></div>
+    <div class="child3"></div>
+    <div class="child1"></div>
+    <div class="child2"></div>
+    <div class="child3"></div>
+    <div class="child1"></div>
+    <div class="child2"></div>
+    <div class="child3"></div>
+    <div class="child1"></div>
+    <div class="child2"></div>
+    <div class="child3"></div>
+    <div class="child1"></div>
+    <div class="child2"></div>
+    <div class="child3"></div>
+</div>
+</body>
+</html>

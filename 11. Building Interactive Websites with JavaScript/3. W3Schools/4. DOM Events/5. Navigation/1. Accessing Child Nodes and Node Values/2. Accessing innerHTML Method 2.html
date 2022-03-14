@@ -1,0 +1,21 @@
+<!--
+Accessing the innerHTML property is the same as accessing the nodeValue of the first child:
+
+myTitle = document.getElementById("demo").firstChild.nodeValue;
+
+-->
+
+<html>
+<body>
+<p id="p01">This is a para</p>
+<p id="demo"></p>
+
+<script>
+    let elementValue= document.getElementById("p01").firstChild.nodeValue;
+    let demoPara=document.getElementById("demo");
+    demoPara.innerHTML=elementValue;
+    console.log(elementValue)
+</script>
+
+</body>
+</html>

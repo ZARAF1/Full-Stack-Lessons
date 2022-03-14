@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul id="list">
+    <li id="first">one</li>
+    <li>two</li>
+    <li>three</li>
+</ul>
+</body>
+<script>
+    let newLiElement=document.createElement('li');
+    newLiElement.id='new';
+    newLiElement.innerHTML='Bums Bums Yum Yum';
+    document.getElementById('list').appendChild(newLiElement);
+
+    document.getElementById('new').style.backgroundColor='pink';
+
+    document.getElementById('list').removeChild(document.getElementById('first'))
+
+
+</script>
+</html>

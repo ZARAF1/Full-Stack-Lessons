@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="div1">
+    <p id="p1">Para 1</p>
+    <p id="p2">Para 2</p>
+</div>
+<p onclick="removeAChild()">Click to remove child</p>
+<script>
+    function removeAChild() {
+        const parent = document.getElementById("div1")
+        const child = document.getElementById("p1")
+        parent.removeChild(child)
+    }
+</script>
+
+</body>
+</html>

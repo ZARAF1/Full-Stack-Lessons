@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="demo">click me to enjoy</p>
+<script>
+    document.getElementById('demo').onclick=changeBg;
+    function changeBg(){
+        this.innerHTML="updated"
+    //    works as well
+    //    document.getElementById('demo').style.backgroundColor="green"
+    }
+    
+</script>
+</body>
+</html>

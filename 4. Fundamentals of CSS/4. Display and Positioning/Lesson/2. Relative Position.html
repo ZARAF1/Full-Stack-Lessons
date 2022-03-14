@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Relative Position</title>
+    <style>
+        .parent{
+            width:500px;
+            height:500px;
+            background-color: #979797;
+            }
+
+        .child1{
+            width:100px;
+            height:100px;
+            background-color: #ec3636;
+            position:relative;
+
+        }
+        .child2{
+            width: 100px;
+            height: 100px;
+            background-color: #117bff;
+            position:relative;
+            left:25px;
+
+        }
+        .child3{
+            width:100px;
+            height:100px;
+            background-color: chartreuse;
+            position:relative;
+            left: 50px;
+            bottom:50px;
+
+        }
+    </style>
+</head>
+<body>
+<pre>
+    <h2>
+        An element with position: relative; is positioned relative to its normal position.
+
+        Setting the top, right, bottom, and left properties of a relatively-positioned element will cause
+        it to be adjusted away from its normal position.
+    </h2>
+</pre>
+<div class="parent">
+    <div class="child1"></div>
+    <div class="child2"></div>
+    <div class="child3"></div>
+</div>
+</body>
+</html>

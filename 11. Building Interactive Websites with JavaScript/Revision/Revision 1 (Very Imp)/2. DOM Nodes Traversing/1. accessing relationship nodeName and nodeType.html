@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Tutorial</title>
+</head>
+<body>
+<div id="div01">
+<h1 id="h01">DOM Lesson 1</h1>
+<p id="p01">Hello World</p>
+</div>
+<p id="demo"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<script>
+<!--Accessing the parent node-->
+const element=document.getElementById('h01')
+const demoElement=document.getElementById('demo')
+const demoTwoElement=document.getElementById('demo2')
+const demoThreeElement=document.getElementById('demo3')
+demoElement.innerHTML=element.parentNode.nodeName
+element.parentNode.style.backgroundColor="aqua"
+element.nextElementSibling.style.color="pink"
+demoTwoElement.innerHTML=element.nextSibling.nodeName
+demoThreeElement.innerHTML=document.getElementById("div01").lastElementChild.nodeType
+</script>
+</body>
+</html>

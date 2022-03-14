@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 id="one">My First Page</h1>
+<p id="two"></p>
+<p id="three">Click Me to Reveal Node Type</p>
+
+<script>
+  document.getElementById("two").innerHTML = document.getElementById("one").firstChild.nodeType;
+  document.getElementById("three").onclick=getNodeType; // only function can be used inside js onclick
+      function getNodeType(){
+      document.getElementById('three').innerHTML=document.getElementById("two").nodeType
+      }
+</script>
+
+</body>
+</html>

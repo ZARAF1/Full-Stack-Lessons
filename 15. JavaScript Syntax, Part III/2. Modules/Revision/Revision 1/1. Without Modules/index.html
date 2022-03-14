@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+<p id="hiddenPara" style="display:none">This is where i hide</p>
+<button id="btn">Reveal something important</button>
+</body>
+
+<script>
+/*Access the DOM Elements*/
+    let button=document.getElementById('btn');
+    let para=document.getElementById('hiddenPara')
+
+/*event handler*/
+    function toggle(domElement){
+        if(domElement.style.display==="none"){
+            domElement.style.display='block';
+        }
+        else{
+            domElement.style.display='none';
+        }
+    }
+
+/*Add event listener on button */
+button.addEventListener('click',()=>{
+    toggle(para)
+})
+</script>
+</html>

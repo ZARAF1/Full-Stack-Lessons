@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="p01">Move over me</p>
+<p id="p02" style="display: none">Click me</p>
+<p id="p03" style="display: none">See me</p>
+</body>
+<script>
+    let para1=document.getElementById('p01')
+    let para2=document.getElementById('p02')
+    let para3=document.getElementById('p03')
+
+    para1.addEventListener('mouseover', function(){
+        para2.style.display="block";
+        // we can keep this separately and not nest it as well
+        para2.addEventListener('click', function(){
+            para3.style.display='block';
+        })
+    })
+
+</script>
+</html>

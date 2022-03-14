@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+</head>
+
+<body>
+<section id='container'>
+    <p id='info'>JavaScript is the programming language of the web. You can use it to add dynamic behavior and store information.
+    </p>
+    <p id='more-info' style="display: none">JavaScript can also handle requests and responses on a website. It's a great language to master for front-end and back-end web development.
+    </p>
+    <button id='show'>Show</button>
+    <button id='hide' style="display: none">Hide</button>
+</section>
+
+</body>
+<script>
+    let info=document.getElementById("info")
+    let moreInfo=document.getElementById('more-info')
+    let showButton=document.getElementById('show');
+    let hideButton=document.getElementById('hide');
+
+    showButton.addEventListener("click", function(){
+        moreInfo.style.display="block"
+        showButton.style.display="none"
+        hideButton.style.display="block"
+
+    } )
+
+    hideButton.addEventListener("click", function(){
+        moreInfo.style.display="none"
+        showButton.style.display="block"
+        hideButton.style.display="none"
+    })
+</script>
+</html>

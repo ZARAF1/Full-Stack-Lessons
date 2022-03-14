@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selecting elements based on attributes and values</title>
+  <style>
+      <!--Selecting elements based on attributes-->
+      [href]{
+          color: lightgreen;
+      }
+
+      <!--Selecting elements based on type attributes and their values-->
+    a[href*="facebook"]{
+          color: yellow;
+          }
+
+  </style>
+</head>
+<body>
+<a href="http://www.google.com">Google</a>
+<a href="http://www.facebook.com">Facebook</a>
+</body>
+</html>

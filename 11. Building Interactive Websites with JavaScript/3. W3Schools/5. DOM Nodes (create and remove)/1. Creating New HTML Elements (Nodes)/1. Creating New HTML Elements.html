@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="div1">
+    <p id="p1">Para 1</p>
+    <p id="p2">Para 2</p>
+</div>
+<script>
+    const newPara=document.createElement("p")
+    const textNodeForPara=document.createTextNode("Para 3")
+    newPara.appendChild(textNodeForPara)
+
+    const element = document.getElementById("div1")
+    element.appendChild(newPara)
+</script>
+</body>
+</html>

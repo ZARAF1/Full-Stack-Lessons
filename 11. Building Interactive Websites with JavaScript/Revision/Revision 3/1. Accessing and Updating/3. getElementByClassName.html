@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="main">
+    <p class="intro">first para</p>
+    <p class="intro">second para</p>
+
+    <p id="demo"></p>
+
+</div>
+
+<script>
+    /* getElementByClassName return an array of elements hence we can access them via index */
+
+
+    let element = document.getElementsByClassName("intro")
+    element[0].style.color="red"
+
+    /* setting innerhtml of demo to the value of first para element */
+
+    const demoObject = document.getElementById("demo");
+    demoObject.innerHTML = "the content of first paragraph is " + element[0].innerHTML
+
+</script>
+
+</body>
+</html>

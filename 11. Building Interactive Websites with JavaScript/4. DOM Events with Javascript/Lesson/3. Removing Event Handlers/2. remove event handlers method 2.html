@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Daily Fortune</title>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+</head>
+<body>
+<h1>Click to see your daily fortune!</h1>
+<p id="fortune"></p>
+
+<button id="fortuneButton">Let me see!</button>
+
+<script>
+    let fortunes = ["A beautiful, smart, and loving person will be coming into your life.",
+        "A fresh start will put you on your way.",
+        "A golden egg of opportunity falls into your lap this month.",
+        "A smile is your personal welcome mat.",
+        "All your hard work will soon pay off."
+    ]
+
+    let button = document.getElementById('fortuneButton');
+    let fortune = document.getElementById('fortune');
+
+    function fortuneSelector(){
+        let randomFortune = Math.floor(Math.random() * fortunes.length);
+        return fortunes[randomFortune];
+    }
+
+    function showFortune(){
+        fortune.innerHTML = fortuneSelector();
+
+
+        //add your code here
+        button.removeEventListener('click',showFortune)
+    }
+
+    button.addEventListener('click', showFortune);
+</script>
+</body>
+</html>

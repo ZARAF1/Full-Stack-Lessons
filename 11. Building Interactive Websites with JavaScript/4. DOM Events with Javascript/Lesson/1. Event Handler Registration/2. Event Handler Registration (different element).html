@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body><body>
+<!--on the different element-->
+<p id="p01">This is a paragraph</p>
+<button id="btn">Click Me</button>
+</body>
+<script>
+    let button = document.getElementById("btn")
+    //using named function as event handler function
+    button.addEventListener('click',changeColor)
+    function changeColor(){
+        let para=document.getElementById("p01")
+        para.style.color="pink"
+    }
+</script>
+</html>

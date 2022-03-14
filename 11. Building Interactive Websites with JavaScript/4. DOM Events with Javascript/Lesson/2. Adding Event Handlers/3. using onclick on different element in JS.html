@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+<p id="p01">This is a paragraph</p>
+<button id="btn01">BackGround Color Change</button>
+<script>
+    let para = document.getElementById('p01');
+    let btn=document.getElementById('btn01')
+    btn.onclick=changeColor;
+
+    function changeColor(){
+        para.style.backgroundColor="aqua";
+        para.style.fontWeight='bold';
+    }
+</script>
+</body>
+</html>

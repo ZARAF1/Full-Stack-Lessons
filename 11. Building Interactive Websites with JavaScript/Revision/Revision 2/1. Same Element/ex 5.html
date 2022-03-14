@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="demo">this will change on click</p>
+<script>
+    let element=document.getElementById('demo')
+    element.onclick=changeColor;
+
+    function changeColor(){
+        this.style.color="red"
+    }
+</script>
+</body>
+</html>
