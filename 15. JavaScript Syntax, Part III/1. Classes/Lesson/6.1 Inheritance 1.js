@@ -35,3 +35,4 @@ console.log(catty.behavior)
 
 const doggie=new Dog("Doggie","Alsatian")
 console.log(doggie.name + " " + doggie._breed)
+console.log(doggie)
