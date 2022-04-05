@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+          crossorigin="anonymous">
+    <title>Gloria's Gardening</title>
+</head>
+<!--
+Collapsing a Component
+Bootstrap also allows us to quickly add interactivity to a webpage. One way to include interactivity is to toggle the visibility of an element.
+
+To add such a feature, we need two elements and a few attributes — one element with content and another element that switches the visibility of the previous element. For example:
+
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+  This button controls the following div's visibility.
+</button>
+
+<div class="collapse" id="collapseExample">
+  <p>This content's visibility gets toggled</p>
+</div>
+In the example above, we have a <button> element that toggles the visibility of the <div> element below it.
+
+The button has an attribute data-toggle="collapse" which enables button’s toggle ability. Another attribute, data-target="#collapseExample", means that this button toggles the visibility of the element with the id of "collapseExample". The aria-expanded and aria-controls attributes are information for screen readers and other accessibility means.
+
+Focusing our attention on the <div> below the button, notice that it has a class of "collapse", which hides the content when the webpage initially renders. Our <div> also has an id of "collapseExample" which corresponds to the value of the button’s data-target.
+
+With both elements set up, we’ve made our page interactive! Look up Bootstrap’s collapse documentation for additional ways of incorporating collapse.
+-->
+<body>
+<div class="container">
+    <!-- Row with collapsible content -->
+    <div class="row">
+        <div class="col">
+            <!-- Make the button toggle the visibility of the span below -->
+            <button class="btn btn-link" aria-expanded="false" aria-controls="seedSpecial" data-target="#seedSpecial" data-toggle = "collapse">
+                Gearing to Grow?
+            </button>
+            <p class="collapse" id="seedSpecial">
+                Use promo code "GGarden" for additional 15% off your entire purchase!
+            </p>
+        </div>
+    </div>
+    <!-- End of row with collapsible content -->
+
+    <!-- Row with nav component -->
+    <div class="row">
+        <div class="col">
+            <nav class="nav justify-content-center">
+                <a class="nav-link" href="#">About Us</a>
+                <a class="nav-link" href="#">Contact Us</a>
+                <a class="nav-link" href="#">Subscribe</a>
+            </nav>
+        </div>
+    </div>
+    <!-- End of row with nav component -->
+
+</div>
+
+<!-- Bootstrap JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
