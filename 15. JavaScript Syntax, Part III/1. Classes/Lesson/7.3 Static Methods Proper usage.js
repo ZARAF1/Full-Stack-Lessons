@@ -1,6 +1,6 @@
 class Animal {
     constructor(name) {
-        this._name = name?name=name:name=Animal.generateName();
+        this._name === name ? name=name:name=Animal.generateName();
         this._behavior = 0;
     }
 
