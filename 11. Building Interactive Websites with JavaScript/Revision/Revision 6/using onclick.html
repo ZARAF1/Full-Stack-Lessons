@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="targetPara">This is a clickable para</p>
+<script>
+    let targetPara = document.getElementById("targetPara")
+    function eventHandlerFunc (e){
+        e.target.style.backgroundColor="pink"
+        alert("hello")
+    }
+    targetPara.onclick= eventHandlerFunc;
+
+</script>
+</body>
+</html>
