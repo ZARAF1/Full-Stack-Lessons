@@ -1,6 +1,6 @@
 /*
 Articles 123 covers these topics
-First we can use addEventListener(), so that when we click or fire some event then only the callback can execute
+First we can use addEventListener(), so that when we click or fire some event then only the callback can execute "Asynchronous Callbacks"
 Second we can use setTimeout() function to make some callback execute after a specific time
 Third we can use setInterval() function to make some callback execute in intervals after a specific time
 */
