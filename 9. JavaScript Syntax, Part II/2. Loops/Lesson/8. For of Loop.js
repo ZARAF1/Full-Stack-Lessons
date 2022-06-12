@@ -6,7 +6,7 @@ Avatar
 The for...of Loop
 A cleaner syntax for iterating through items, one by one.
 
-    Introduction
+    1. Introduction
 A common task you will encounter when programming is iterating over arrays or array-like objects. As a JavaScript programmer, you may already be familiar with the for loop. This loop requires a counter, an iteration statement, and a stopping condition to control looping. While powerful, the for loop can be a bit cumbersome to set up, introduces room for errors, and could lead to difficult-to-read code.
 
     As a remedy to some of the for loop’s shortcomings, the ES6 version of JavaScript introduced the shorter and more concise for...of loop. This article will outline the benefits of using for...of loops and walk through how to use a for...of loop to iterate through arrays and strings. This article will outline the benefits of using for...of and walk through using for...of to iterate through arrays and strings.
