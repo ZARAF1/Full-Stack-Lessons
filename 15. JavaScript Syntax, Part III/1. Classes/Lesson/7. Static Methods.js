@@ -6,7 +6,7 @@ class Animal {
 
     static generateName() {
         const names = ['Angel', 'Spike', 'Buffy', 'Willow', 'Tara'];
-        const randomNumber = Math.floor(Math.random()*5);
+        const randomNumber = Math.floor(Math.random()*names.length);
         return names[randomNumber];
     }
 }

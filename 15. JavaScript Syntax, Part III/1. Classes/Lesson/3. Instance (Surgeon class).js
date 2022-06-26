@@ -5,12 +5,13 @@ class Surgeon {
     }
 }
 
-const surgeonRomero = new Surgeon('Francisco Romero','Cardiovascular')
+const surgeonRomero = new Surgeon('Francisco Romero', 'Cardiovascular')
 
-const surgeonJackson = new Surgeon('Ruth Jackson','Orthopedics')
+const surgeonJackson = new Surgeon('Ruth Jackson', 'Orthopedics')
 
-const someSurgeon=new Surgeon;
-console.log(someSurgeon)
+const someSurgeon = new Surgeon;
+
 
 console.log(surgeonRomero);
-console.log(surgeonJackson)
+console.log(surgeonJackson);
+console.log(someSurgeon);

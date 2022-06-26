@@ -1,17 +1,18 @@
+
 let customersArray = ['Custy Stomer', 'C. Oostomar', 'C.U.S. Tomer', 3432434, 'Custo Mer', 'Custopher Ustomer', 3432435, 'Kasti Yastimeur'];
 
-//Write Your Code here:
-function checkCustomersArray(arr){
+let checkCustomerArray=arr=>{
     arr.forEach(element=>{
         if(typeof element!=="string"){
-            console.log(`Type error: ${element} should be a string!`)
+            console.log(`${element} should be a string and not ${typeof element}`)
         }
     })
 }
-checkCustomersArray(customersArray)
-
-function stringPush(val){
-    if (typeof val === "string"){
-        customersArray.push(val)
+const newCustomerArray=[];
+checkCustomerArray(customersArray)
+customersArray.forEach(element=>{
+    if (typeof element ==="string"){
+        newCustomerArray.push(element)
     }
-}
+})
+console.log(newCustomerArray)

@@ -1,13 +1,19 @@
-let arr:string[]=["A","B"];
-let tuple:[string,string]=["C","D"];
-tuple=["c","d"];
-console.log(tuple);
 
+let customersArray = ['Custy Stomer', 'C. Oostomar', 'C.U.S. Tomer', 3432434, 'Custo Mer', 'Custopher Ustomer', 3432435, 'Kasti Yastimeur'];
 
-let favoriteCoordinates:[number,number,string,number,number,string] = [40, 43.2, 'N', 73, 59.8, 'W'];
-favoriteCoordinates=[17,45,'N',142,30,'E'];
-favoriteCoordinates[6]=-6.825; // throws an error The whole point of tuples is that they have fixed lengths, so you
-// cannot access elements of favoriteCoordinates with indices greater than 5. Even when you want to!
-
-
+let checkCustomerArray=arr=>{
+    arr.forEach(element=>{
+        if(typeof element!=="string"){
+            console.log(`${element} should be a string and not ${typeof element}`)
+        }
+    })
+}
+const newCustomerArray=[];
+checkCustomerArray(customersArray)
+customersArray.forEach(element=>{
+    if (typeof element ==="string"){
+         newCustomerArray.push(element)
+    }
+})
+console.log(newCustomerArray)
 

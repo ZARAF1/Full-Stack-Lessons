@@ -20,3 +20,6 @@ class Surgeon {
 
 const surgeonRomero = new Surgeon('Francisco Romero', 'Cardiovascular');
 const surgeonJackson = new Surgeon('Ruth Jackson', 'Orthopedics');
+
+surgeonRomero.takeVacationDays(5)
+console.log(surgeonRomero)
