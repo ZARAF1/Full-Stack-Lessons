@@ -1,6 +1,8 @@
+/*
 Inner functions and arrow functions
 One common mistake when using inner functions is misunderstanding the context where the inner
 function is being run. Let us take an example of a method with an inner function:
+*/
 
 const person = {
     firstName: "Stacy",
@@ -19,11 +21,13 @@ const person = {
 
 person.introduction();
 // "Hello, my name is undefined undefined and my phone number is undefined!"
+/*
 Intuitively it would seem logical that the inner function would be run in the same context as the method.
 However, this claim is false. Running functions without object namespace or provided scope is still just
 a function invocation even if the function is defined inside a method or called inside method invocation.
 As we do not provide the function with any context, we will not be getting any.
 Basically this inside createIntroduction will either be undefined or point to the global object.
+*/
 
 To actually call the inner function with person as its context, the context should be provided upon calling:
 

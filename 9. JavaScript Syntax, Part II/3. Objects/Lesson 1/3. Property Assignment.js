@@ -5,7 +5,7 @@ let spaceShip = {
 }
 
 // using dot notation
-spaceShip.color= 'blue';
+spaceShip.color= 'Blue';
 console.log(spaceShip.color)
 
 // using bracket notation

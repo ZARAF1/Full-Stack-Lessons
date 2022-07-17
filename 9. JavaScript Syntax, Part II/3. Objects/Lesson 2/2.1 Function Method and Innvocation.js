@@ -1,5 +1,6 @@
 /*Function and method invocations
-To get back into JavaScript world, and still keeping the previous analogy in mind, let us start with the previously introduced person object:
+To get back into JavaScript world, and still keeping the previous analogy in mind, let us start with the previously
+introduced person object:
 
 const person = {
     firstName: "Stacy",

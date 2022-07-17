@@ -56,3 +56,5 @@ console.log(spaceship.flightPath[0])
 for (let members in spaceship.crew){
     console.log(`${members}: ${spaceship.crew[members].degree}`)
 }
+
+console.log(spaceship.flightPath[0].planet)

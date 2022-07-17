@@ -114,7 +114,8 @@ Terrorbird
 Parotia
 Kakapo
 Use Case: for loop vs for…of loop
-You might now be wondering, why use a for loop at all if a for...of loop is so much simpler? Well, the for...of loop is not a complete replacement for the for loop. Take a look at the following code snippet:
+You might now be wondering, why use a for loop at all if a for...of loop is so much simpler? Well, the for...of loop is
+not a complete replacement for the for loop. Take a look at the following code snippet:
 
     const nums = [1, 2, 3];
 

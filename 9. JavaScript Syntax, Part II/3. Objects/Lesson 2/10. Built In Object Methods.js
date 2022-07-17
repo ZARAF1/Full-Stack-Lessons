@@ -18,19 +18,28 @@ const robot = {
     armor: 'Steel-plated',
     energyLevel: 75
 };
-
-// What is missing in the following method call?
+// Object keys
+// What is missing in the following method call?`
 const robotKeys = Object.keys(robot);
 
 console.log(robotKeys);
 
+//Object entries
 // Declare robotEntries below this line:
 const robotEntries = Object.entries(robot)
 
 console.log(robotEntries);
 
-// Declare newRobot below this line:
-const newRobot=Object.assign({laserBlaster: true,voiceRecognition: true
-},robot)
 
-console.log(newRobot);
+//OBJECT assign
+// Declare newRobot below this line:
+const target = { a: 1, b: 2 };
+const source = { b: 4, c: 5 };
+
+const returnedTarget = Object.assign(target, source);
+
+console.log(target);
+// expected output: Object { a: 1, b: 4, c: 5 }
+
+console.log(returnedTarget);
+// expected output: Object { a: 1, b: 4, c: 5 }

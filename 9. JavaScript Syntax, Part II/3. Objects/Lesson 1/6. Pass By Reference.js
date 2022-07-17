@@ -9,7 +9,7 @@ let mutateObject=(obj,prop)=>{
 mutateObject(spaceShip,'crewNum')
 console.log(spaceShip.crewNum)
 
-//reassignment how ever does not work or stick even if object is assigned to a variable declared
+//reassignment how ever does not work or stick when using a function even if object is assigned to a variable declared
 // with let
 
 let reassignObject=(obj)=>{
@@ -24,6 +24,8 @@ console.log(spaceShip)
 // however we can reassign an object assigned to a let variable normally
 
 spaceShip={
+    type:"aero one",
+    code:07115214662,
     message()
     {
          return 'Welcome Aboard'

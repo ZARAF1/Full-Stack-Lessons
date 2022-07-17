@@ -11,6 +11,7 @@ console.log(spaceShipColor)
 // using bracket notation
 let typeOfFuel = spaceShip["Fuel Type"];
 console.log(typeOfFuel)
+console.log(spaceShip["color"])
 
 console.log(spaceShip["crewNum"])
 
