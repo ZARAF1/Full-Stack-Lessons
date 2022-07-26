@@ -1,7 +1,7 @@
 // the class doesnt replicate and is different from the previous dog object created in 1.Dog Object
 
 class Animal {
-    constructor(name,gender,behavior=0) {
+   constructor(name,gender,behavior=0) {
         this._name=name;
         this._gender=gender;
         this._behavior=behavior;
@@ -9,7 +9,7 @@ class Animal {
     get name(){
         return this._name;
     }
-    set name(newName) {
+    setName(newName) {
         typeof newName === "string" ? this._name = newName : console.log("provide correct name");
     }
     get gender(){

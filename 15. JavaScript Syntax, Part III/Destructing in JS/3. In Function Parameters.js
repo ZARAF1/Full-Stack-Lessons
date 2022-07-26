@@ -7,7 +7,7 @@ object.
 
 Note that we don’t have to use every property from the truck object: we only create parameter variables for the values
 that we need.*/
-    let truck = {
+let truck = {
     model: '1977 Mustang convertible',
     maker: 'Ford',
     city: 'Detroit',
@@ -22,3 +22,47 @@ const printCarInfo = ({model, maker, city}) => {
 
 printCarInfo(truck);
 // Prints: The 1977 Mustang convertible, or Ford, is in the city Detroit.
+
+
+/*<<<***example 2***>>>*/
+const data = {
+    welcome: 'Welcome to 30 Days Of React',
+    title: 'Getting Started React',
+    subtitle: 'JavaScript Library',
+    author: {
+        firstName: 'Asabeneh',
+        lastName: 'Yetayeh',
+    },
+    date: new Date(), // date needs to be formatted to a human readable format
+}
+
+const destructionInsideFunction = (obj) => {
+    const {welcome} = obj;
+    const {title} = obj;
+    const {subtitle} = obj;
+    const {firstName, lastName} = obj.author;
+    console.log(welcome + " " + firstName)
+}
+
+destructionInsideFunction(data)
+
+
+// refining above
+const destructionInOneLineInsideFunction = (obj) => {
+    const {welcome, title, subtitle, author, date} = obj;
+    const {firstName,lastName}=author;
+    console.log(welcome + " " + lastName)
+}
+
+// refining above more
+const destructionInOneLineInsideFunctionRefined = (obj) => {
+    const {welcome, title, subtitle, author:{firstName,lastName}, date} = obj;
+    console.log(welcome + " " + lastName)
+}
+
+// refining more and more Destructuring the props inside the parenthesis
+
+const destructionInsideParentheses =({welcome, title, subtitle, author:{firstName,lastName}, date})=>{
+    console.log(welcome +" "+firstName+" on" + date)
+}
+destructionInsideParentheses(data)

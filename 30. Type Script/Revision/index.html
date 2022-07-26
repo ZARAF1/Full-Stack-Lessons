@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="">
+    <input type="text" name="f" id="first" placeholder="first">
+    <input type="text" name="s" id="second" placeholder="second">
+    <button type="button"  onclick="add()">
+        click me!!
+    </button>
+    <h3 id="display"></h3>
+</form>
+<script>
+
+    function add(){
+        let input1=document.getElementById("first").value;
+        let input2=document.getElementById("second").value;
+        let sum = input1+input2;
+        let display=document.getElementById("display")
+        display.innerText=sum
+    }
+
+
+</script>
+</body>
+</html>

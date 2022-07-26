@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<h2 id="sty">Thisiissisisisisi </h2>
+<script>
+    const stringOfValues="0123456789abcdef"
+    const makeColor=()=>{
+        let color ="#";
+        for (let i=0;i<6;i++){
+            let randomNumber= Math.floor(Math.random()*stringOfValues.length)
+            let randomCharacter = stringOfValues[randomNumber];
+            color+=randomCharacter
+        }
+
+        return color;
+
+    }
+    console.log(makeColor())
+    let colorElement=document.getElementById("sty")
+    colorElement.style.color=makeColor();
+
+
+</script>
+</body>
+</html>
