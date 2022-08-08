@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex</title>
+    <style>
+        .container {
+            width: 200px;
+            height: 200px;
+            display: inline-flex;
+            background-color: #9b9b9b;
+            padding:10px;
+
+        }
+
+        .container>p{
+            border:2px solid red;
+        }
+    </style>
+</head>
+<body>
+<div class='container'>
+    <p>I’m inside of a flex container!</p>
+    <p>A flex container’s children are flex items!</p>
+</div>
+<div class='container'>
+    <p>I’m also a flex item!</p>
+    <p>Me too!</p>
+</div>
+</body>
+</html>

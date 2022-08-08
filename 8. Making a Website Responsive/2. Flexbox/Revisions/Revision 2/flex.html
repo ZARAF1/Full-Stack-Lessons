@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display Flex</title>
+    <style>
+        .container{
+            width:100%;
+            height:600px;
+            background-color: #9b9b9b;
+            display: flex;
+            justify-content: space-around;
+            align-items: baseline;
+        }
+        #container--item-one{
+            width:100px;
+            height:100px;
+            background-color: #BD6152;
+            flex-grow:1
+        }
+        #container--item-two{
+            width:100px}
+        #container--item-three{
+            width:100px;
+            height:100px;
+            background-color: #9dc20b;
+            flex-grow:1;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1 id="container--item-one">1</h1>
+    <h1 id="container--item-two">2</h1>
+    <h1 id="container--item-three">3</h1>
+</div>
+
+</body>
+</html>
