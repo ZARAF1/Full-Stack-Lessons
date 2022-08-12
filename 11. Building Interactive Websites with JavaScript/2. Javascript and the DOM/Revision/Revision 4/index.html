@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+<body>
+    <input type="number" id="firstNumber" placeholder="number 1"/>
+    <input type="number" id="secondNumber" placeholder="number 2"/>
+    <button id="button">Add!</button>
+
+<script>
+    let input1=document.getElementById("firstNumber")
+    let input2=document.getElementById("secondNumber")
+    let button=document.getElementById("button")
+    console.log(input1,input2)
+    function addNumbers (a,b){
+        console.log(a+b);
+    }
+
+// after click add we are getting values from the number fields thats why we are using .value inside the addNumbers function
+    button.addEventListener("click", function(){addNumbers(+input1.value,+input2.value)
+    })
+</script>
+</body>
+</html>

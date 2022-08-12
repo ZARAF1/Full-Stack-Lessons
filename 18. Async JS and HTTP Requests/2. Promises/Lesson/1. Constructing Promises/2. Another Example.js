@@ -6,7 +6,7 @@ const executorFunction = (resolve,reject)=>{
         reject('I am rejected as condition is false')
     }
 }
-
+// using the promise in a function
 const newFunction =()=>{
     return new Promise(executorFunction)
 }

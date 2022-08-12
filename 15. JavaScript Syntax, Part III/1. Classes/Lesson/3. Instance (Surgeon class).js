@@ -13,5 +13,14 @@ const someSurgeon = new Surgeon;
 
 
 console.log(surgeonRomero);
+
+
 console.log(surgeonJackson);
 console.log(someSurgeon);
+
+const person = {
+    name:"ali",
+    age:40
+}
+
+console.log(person)
