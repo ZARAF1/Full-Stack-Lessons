@@ -9,7 +9,15 @@ if (true){
 
 
 let weather='nice';
+
 if (weather==='nice'){
     console.log('lets go and play')
 }
+
+
+
+
+
+
+
 

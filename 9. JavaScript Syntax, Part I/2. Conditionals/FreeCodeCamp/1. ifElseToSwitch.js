@@ -19,4 +19,4 @@ function chainToSwitch(val) {
     return answer;
 }
 
-console.log(chainToSwitch('bob'));
+console.log(chainToSwitch(42));

@@ -16,11 +16,11 @@ let gainedDollar = 3;
 let lostDollar = 50;
 gainedDollar++;
 lostDollar--;
-console.log(gainedDollar)
+console.log("Dollar Gained " + gainedDollar)
 console.log(lostDollar)
 
 
 // pre increment example
 ++gainedDollar;
-console.log(gainedDollar)
+console.log("Dollar Gained " + gainedDollar)
 
