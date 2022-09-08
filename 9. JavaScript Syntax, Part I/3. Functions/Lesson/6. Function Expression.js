@@ -6,19 +6,25 @@
 * A function expression is often stored in a variable in order to refer to it.
 */
 
-const calculateArea = function (width,height){
-    const area= width * height;
+const calculateArea = function (width, height) {
+    const area = width * height;
     return area;
 }
-console.log(calculateArea(15,10))
+console.log(calculateArea(15, 10))
 
 // another example
-const plantNeedsWater = function(day){
-    if (day==='Wednesday'){
+const plantNeedsWater = function (day) {
+    if (day === 'Wednesday') {
         return true;
-    }
-    else{
+    } else {
         return false;
     }
 }
-console.log(plantNeedsWater('Tuesday'))
+console.log(plantNeedsWater('Tuesday'));
+
+
+const multipleNumbers = function (val1, val2) {
+    return val1 * val2;
+}
+
+console.log(multipleNumbers(5, 2))

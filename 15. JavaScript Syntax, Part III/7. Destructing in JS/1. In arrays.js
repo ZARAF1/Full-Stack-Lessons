@@ -1,7 +1,7 @@
-let colors=["blue","green","red"];
-let [x,y,z]=colors;
-console.log(x,y,z)
-let [printX]=colors;
+let colors = ["blue", "green", "red"];
+let [x, y, z] = colors;
+console.log(x, y, z)
+let [printX] = colors;
 console.log(printX)
 
 
@@ -16,6 +16,6 @@ function calculate(a, b) {
     return [add, subtract, multiply, divide];
 }
 
-const [add, subtract, multiply, divide] = calculate(4, 7);
+let [add, subtract, multiply, divide] = calculate(4, 7);
 console.log("Sum: " + add)
-console.log("Difference: "+ subtract)
+console.log("Difference: " + subtract)

@@ -4,7 +4,6 @@ const rectangleArea = (width, height) => {
 };
 
 
-
 // Another Example
 
 const plantNeedsWater = (day) => {
