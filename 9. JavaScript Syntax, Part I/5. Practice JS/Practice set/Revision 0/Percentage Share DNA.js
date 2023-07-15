@@ -25,3 +25,5 @@ console.log(whatRelation(34))
 
 console.log(whatRelation(3))
 // Should print 'You are likely 2nd cousins.'
+
+

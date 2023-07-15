@@ -2,24 +2,28 @@ class Surgeon {
     constructor(name, department) {
         this._name = name;
         this._department = department;
-        this._remainingVacationDays=20;
+        this._remainingVacationDays = 20;
     }
-    get name(){
+
+    get name() {
         return this._name;
     }
-    get department(){
+
+    get department() {
         return this._department;
     }
-    get remainingVacationDays (){
+
+    get remainingVacationDays() {
         return this._remainingVacationDays;
     }
-    takeVacationDays(daysOff){
-        this._remainingVacationDays-=daysOff;
+
+    set takeVacationDays(daysOff) {
+        this._remainingVacationDays -= daysOff;
     }
 }
 
 const surgeonRomero = new Surgeon('Francisco Romero', 'Cardiovascular');
 const surgeonJackson = new Surgeon('Ruth Jackson', 'Orthopedics');
 
-surgeonRomero.takeVacationDays(5)
+surgeonRomero.takeVacationDays = 5
 console.log(surgeonRomero)

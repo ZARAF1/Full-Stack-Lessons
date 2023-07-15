@@ -1,12 +1,11 @@
-
 // POST Increment: The operator returns the initial variable value first  then only value of variable will incremented by 1.
-num=1;
+num = 1;
 console.log(num++)
-console.log(num)
+console.log({num})
 
 // PRE Increment: It will increment the value of the variable even before assigning it to the variable.
 console.log('pre-increment')
-numb=1;
+numb = 1;
 console.log(++numb)
 console.log(typeof numb)
 

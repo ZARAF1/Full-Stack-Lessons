@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="demo">
+    this is what appears out of the blue in the in the alert
+    <code>This is my javascript code or what ever you want it to be</code>
+    <i>This appears in italics</i>
+</div>
+<button onclick="testFunction()">This should alert you</button>
+<script>
+    const testFunction = () => {
+        let x = document.getElementById('demo')
+        alert(x.innerHTML)
+    }
+</script>
+<!--
+// try this code out
+<script>
+    const testFunction = () => {
+        let x = document.1. getElementById('demo')
+        alert(x.innerText)
+    }
+</script>-->
+</body>
+</html>

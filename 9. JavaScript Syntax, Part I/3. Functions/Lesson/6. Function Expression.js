@@ -23,8 +23,10 @@ const plantNeedsWater = function (day) {
 console.log(plantNeedsWater('Tuesday'));
 
 
-const multipleNumbers = function (val1, val2) {
+const multiplyNumbers = function (val1, val2) {
     return val1 * val2;
 }
 
-console.log(multipleNumbers(5, 2))
+console.log(multiplyNumbers(5, 2))
+
+

@@ -4,8 +4,7 @@ relative number of high and low cards remaining in the deck. This is called Card
 
 Having more high cards remaining in the deck favors the player. Each card is assigned a value
 according to the table below. When the count is positive, the player should bet high.
-When the count is zero or negative, the player should
- bet low.
+When the count is zero or negative, the player should bet low.
 
 Count Change	Cards
 +1	            2, 3, 4, 5, 6
@@ -30,20 +29,17 @@ var count = 0;
 
 function cc(card) {
     // Only change code below this line
-    if(card===2||card===3||card===4||card===5||card===6){
+    if (card === 2 || card === 3 || card === 4 || card === 5 || card === 6) {
         count++;
-    }
-    else if(card===7||card===8||card===9){
-        count+=0;
-    }
-    else if(card===10||card==="J"||card==="Q"||card==="K"||card==="A"){
+    } else if (card === 7 || card === 8 || card === 9) {
+        count += 0;
+    } else if (card === 10 || card === "J" || card === "Q" || card === "K" || card === "A") {
         count--;
     }
 
-    if(count>0){
+    if (count > 0) {
         return count + " Bet";
-    }
-    else if(count<=0){
+    } else if (count <= 0) {
         return count + " Hold";
     }
 

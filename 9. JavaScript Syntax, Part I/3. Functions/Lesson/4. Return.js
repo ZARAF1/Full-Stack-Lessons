@@ -1,11 +1,14 @@
-function calcArea(width,height){
-    return width*height;
+function calcArea(width, height) {
+    return width * height;
 }
-console.log(calcArea(10,5))
+
+console.log(calcArea(10, 5))
 
 // another example
-function monitorCount(rows,columns){
-    return rows*columns;
+function monitorCount(rows, columns) {
+    return rows * columns;
 }
-const numOfMonitors=monitorCount(5,4); // storing the return value of the call in a variable
-console.log(numOfMonitors) // printing the variable
+
+const numOfMonitors = monitorCount(5, 4); // storing the return value of the call in a variable
+const numberOfMonitors = monitorCount(4, 5) * 2 // we can also do this
+console.log(numOfMonitors, numberOfMonitors) // printing the variables

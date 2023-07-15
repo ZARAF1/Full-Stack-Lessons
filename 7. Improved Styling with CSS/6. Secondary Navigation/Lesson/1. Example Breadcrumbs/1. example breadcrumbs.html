@@ -5,28 +5,29 @@
     <title>Title</title>
     <style>
         .breadcrumb > li {
-            display:inline;
+            display: inline;
 
         }
 
-        .breadcrumb li+li::before {
+        .breadcrumb li + li::before {
             padding: 10px;
-            content:">";
+            content: ">";
 
         }
 
         .breadcrumb a {
-            text-decoration:none;
+            text-decoration: none;
         }
 
         .breadcrumb a:hover {
-            color:red;
+            color: red;
         }
     </style>
 </head>
 <body>
 
-<!--Breadcrumbs are typically displayed next to each other, on the same line. First, set the display property to inline for the .breadcrumb > li selector in order to put list items on the same line.
+<!--Breadcrumbs are typically displayed next to each other, on the same line. First, set the display property to inline for
+the .breadcrumb > li selector in order to put list items on the same line.
 
 
 2.
@@ -38,16 +39,21 @@ This requires some complicated CSS, but it will save us time in the long run!
 
 .breadcrumb li+li::before is the selector that we want! View the hint if you want more information about how this complicated selector works!
 
-In styles.css, find the selector (.breadcrumb li+li::before). Set the content property to “>” to place the greater than sign between each adjacent breadcrumb.
+In styles.css, find the selector (.breadcrumb li+li::before). Set the content property to “>” to place the greater than sign between each
+adjacent breadcrumb.
 
 
 
 Hint
-The + is called the adjacent sibling combinator; it will only select two li‘s when they are immediately next to each other, with the same parent. The element that actually gets selected is the second element of this sibling pair.
-The ::before part of this selector creates a pseudo-element. The ::before pseudo-element is often used with the content property, to add content that will be displayed just before the selected element.
+The + is called the adjacent sibling combinator; it will only select two li‘s when they are immediately next to each other,
+with the same parent.
+The element that actually gets selected is the second element of this sibling pair.
+The ::before part of this selector creates a pseudo-element. The ::before pseudo-element is often used with the content property,
+to add content that will be displayed just before the selected element.
 
 3.
-Another feature of breadcrumbs is that they are often not underlined. Underlines are used to communicate that text within paragraph elements can be clicked, but we want our users to recognize breadcrumbs as part of the site navigation, rather than just like any other clickable text.
+Another feature of breadcrumbs is that they are often not underlined. Underlines are used to communicate that text within paragraph elements
+can be clicked, but we want our users to recognize breadcrumbs as part of the site navigation, rather than just like any other clickable text.
 
 Remove the link underline by changing the text-decoration property of the breadcrumb a selector to have the value none.
 

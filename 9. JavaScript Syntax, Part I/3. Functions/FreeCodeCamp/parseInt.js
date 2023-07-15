@@ -7,7 +7,6 @@ var a = parseInt("007");
 console.log(a)
 
 
-
 function convertToInteger(str) {
     return parseInt(str)
 }

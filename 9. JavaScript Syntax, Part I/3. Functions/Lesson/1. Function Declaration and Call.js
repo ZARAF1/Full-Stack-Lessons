@@ -7,23 +7,23 @@ In programming, we often use code to perform a specific task multiple times.
 */
 
 // example 1
-function getReminder(){
-     console.log('Remind me to wake up')
+function getReminder() {
+    console.log('Remind me to wake up')
 }
+
 getReminder();
 
 
-
-
 //example 2
-function  greetInSpanish(){
+function greetInSpanish() {
     console.log('Buenas Tardes.')
 }
 
+greetInSpanish()
 
 //example 3
 
-function sayThanks(){
+function sayThanks() {
     console.log("Thank you for your purchase! We appreciate your business.")
 }
 

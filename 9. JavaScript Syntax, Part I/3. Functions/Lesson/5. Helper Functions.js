@@ -9,11 +9,11 @@ we could write two functions like:
 */
 
 
-function multiplyByNineFifth (number){
-return number *(9/5);
+function multiplyByNineFifth(number) {
+    return number * (9 / 5);
 }
 
-function getFahrenheit(celsius){
+function getFahrenheit(celsius) {
     return multiplyByNineFifth(celsius) + 32;
 }
 
@@ -24,8 +24,10 @@ console.log(getFahrenheit(200));
 function monitorCount(rows, columns) {
     return rows * columns;
 }
-function costOfMonitors(rows,columns){
-    return monitorCount(rows,columns)*200;
+
+function costOfMonitors(rows, columns) {
+    return monitorCount(rows, columns) * 200;
 }
-const totalCost= costOfMonitors(5,4);
+
+const totalCost = costOfMonitors(5, 4);
 console.log(totalCost);

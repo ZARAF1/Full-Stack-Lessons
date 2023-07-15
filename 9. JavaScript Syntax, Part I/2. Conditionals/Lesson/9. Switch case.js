@@ -1,17 +1,19 @@
-/*
-let fruit='pears';
-switch( fruit){
-    case 'apples':console.log('Apples found');
-    break;
-    case 'pears':console.log('Pears found');
-    break;
-    /!*case 'mango': console.log('Mangoes found');
-    break;*!/
-    default:console.log('fruit not found');
-    break;
+let fruit = 'dear';
+switch (fruit) {
+    case 'apples':
+        console.log('Apples found');
+        break;
+    case 'pears':
+        console.log('Pears found');
+        break;
+    case 'mango':
+        console.log('Mangoes found');
+        break;
+    default:
+        console.log(fruit + ' fruit not found');
+        break;
 }
 
-*/
 
 let randomNumber = Math.floor(Math.random() * 10)
 
@@ -33,6 +35,11 @@ const switchExampleInFunction = (val) => {
         case 9:
             console.log("Met 6 7 8 9");
             break;
+
+        default:
+            console.log("I could not find a possible category for the number " + val);
+            break;
     }
 }
-switchExampleInFunction(randomNumber)
+switchExampleInFunction(10)
+

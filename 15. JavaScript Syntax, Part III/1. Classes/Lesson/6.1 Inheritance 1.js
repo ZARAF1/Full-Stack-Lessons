@@ -1,8 +1,9 @@
 class Animal {
     constructor(name) {
-        this._name=name;
-        this._behavior=0;
+        this._name = name;
+        this._behavior = 0;
     }
+
     get name() {
         return this._name;
     }
@@ -16,23 +17,26 @@ class Animal {
     }
 }
 
-class Cat extends Animal{
-    constructor(name,usesLitter) {
+class Cat extends Animal {
+    constructor(name, usesLitter) {
         super(name);
-        this._usesLitter=usesLitter;
+        this._usesLitter = usesLitter;
     }
 }
-class Dog extends Animal{
-    constructor(name,breed) {
+
+class Dog extends Animal {
+    constructor(name, breed) {
         super(name);
-        this._breed=breed;
-        }
+        this._breed = breed;
+    }
 }
 
-const catty=new Cat("Catty",true)
+const catty = new Cat("Catty", true)
+console.log(catty)
 catty.incrementBehavior();
+
 console.log(catty.behavior)
 
-const doggie=new Dog("Doggie","Alsatian")
+const doggie = new Dog("Doggie", "Alsatian")
 console.log(doggie.name + " " + doggie._breed)
 console.log(doggie)

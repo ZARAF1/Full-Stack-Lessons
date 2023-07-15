@@ -11,23 +11,22 @@
 </body>
 
 <script>
-/*Access the DOM Elements*/
-    let button=document.getElementById('btn');
-    let para=document.getElementById('hiddenPara')
+    /*Access the DOM Elements*/
+    let button = document.getElementById('btn');
+    let para = document.getElementById('hiddenPara')
 
-/*event handler*/
-    function toggle(domElement){
-        if(domElement.style.display==="none"){
-            domElement.style.display='block';
-        }
-        else{
-            domElement.style.display='none';
+    /*event handler*/
+    const toggle = (domElement) => {
+        if (domElement.style.display === "none") {
+            domElement.style.display = 'block';
+        } else {
+            domElement.style.display = 'none';
         }
     }
 
-/*Add event listener on button */
-button.addEventListener('click',()=>{
-    toggle(para)
-})
+    /*Add event listener on button */
+    button.addEventListener('click', () => {
+        toggle(para)
+    })
 </script>
 </html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button id="btn">This Button show and hides and image</button>
+<img src="dog.jpg" alt="doggie" id="img" style="display: none">
+</body>
+<script type="module">
+    import {showHide, changeBackgroundColor} from "../module/domFunctions.js";
+
+    let button = document.getElementById("btn");
+    let image = document.getElementById("img");
+
+
+    button.addEventListener("click", () => {
+        showHide(image);
+        changeBackgroundColor(button);
+    })
+</script>
+</html>

@@ -1,23 +1,36 @@
 // Write your function here:
-const lifePhase =(age)=>{
-    if (age===0 || age<=3){return 'baby'};
+const lifePhase = (age) => {
+    if (age === 0 || age <= 3) {
+        return 'baby'
+    }
+    ;
 
-    if (age<=12){ return 'child'};
+    if (age <= 12) {
+        return 'child'
+    }
+    ;
 
-    if (age<=19){ return 'teen'};
+    if (age <= 19) {
+        return 'teen'
+    }
+    ;
 
-    if (age<=64) {return 'adult'};
+    if (age <= 64) {
+        return 'adult'
+    }
+    ;
 
-    if (age<=140){return 'senior citizen'};
+    if (age <= 140) {
+        return 'senior citizen'
+    }
+    ;
 
-    if (age<0 || age>140) {return 'This is not a valid age'};
+    if (age < 0 || age > 140) {
+        return 'This is not a valid age'
+    }
+    ;
 
 }
-
-
-
-
-
 
 
 // Uncomment the line below when you're ready to try out your function
@@ -26,8 +39,7 @@ console.log(lifePhase(12)) //should print 'child'
 // We encourage you to add more function calls of your own to test your code!
 
 
-
-const lifePhase = age => {
+const lifePhasee = age => {
     if (age < 0 || age > 140) {
         return 'This is not a valid age'
     } else if (age < 4) {
@@ -60,4 +72,4 @@ function lifePhase (age) {
     }
 }
 */
-console.log(lifePhase(5)) 
+console.log(lifePhasee(5))

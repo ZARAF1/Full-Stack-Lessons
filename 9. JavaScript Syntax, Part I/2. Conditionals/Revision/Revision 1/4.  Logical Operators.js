@@ -2,7 +2,7 @@
 Logical Operators
 When we are going to compare to boolean values we will use logical operators
 
-Working with conditionals means that we will be using booleans, true or false values. In JavaScript, there are operators that work with boolean values known as logical operators. We can use logical operators to add more sophisticated logic to our conditionals. There are three logical operators:
+Working with conditionals means that we will be using booleans, true or false values. In JavaScript, there are operators that work with boolean values known as logical operators. We can use logical operators to add more sophisticated dom functions to our conditionals. There are three logical operators:
 
     the and operator (&&)
 the or operator (||)
@@ -34,21 +34,21 @@ let sleepy = false;
 console.log(!sleepy); // Prints true
 Essentially, the ! operator will either take a true value and pass back false, or it will take a false value and pass back true.
 
-    Logical operators are often used in conditional statements to add another layer of logic to our code.*/
+    Logical operators are often used in conditional statements to add another layer of dom functions to our code.*/
 
 
 // LOGICAL AND /////
 // Example 1 //
-if (true && false){
+if (true && false) {
     console.log('true')
-}else{
+} else {
     console.log('false');
 }
 
 
 // Example 2 //
-let stopLight='green';
-let pedestrians=0;
+let stopLight = 'green';
+let pedestrians = 0;
 if (stopLight === 'green' && pedestrians === 0) {
     console.log('Go!');
 } else {
@@ -58,20 +58,19 @@ if (stopLight === 'green' && pedestrians === 0) {
 
 //LOGICAL OR /////
 //Example 1
-if(true || false){
+if (true || false) {
     console.log('true')
-}else{
+} else {
     console.log('false');
 }
 
 // Example 2
-let day='Monday'
+let day = 'Monday'
 if (day === 'Saturday' || day === 'Sunday') {
     console.log('Enjoy the weekend!');
 } else {
     console.log('Do some work.');
 }
-
 
 
 //LOGICAL NOT OR BANG operator0

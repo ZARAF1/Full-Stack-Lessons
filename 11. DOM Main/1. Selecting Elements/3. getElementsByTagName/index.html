@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>JavaScript getElementsByTagName() Demo</h1>
+<h2>First heading</h2>
+<p>This is the first paragraph.</p>
+<h2>Second heading</h2>
+<p>This is the second paragraph.</p>
+<h2>Third heading</h2>
+<p>This is the third paragraph.</p>
+<button id="btn">CLICK TO SEE</button>
+<script>
+    <!--    returns HTML collection not nodelist-->
+    let btn = document.getElementById("btn");
+    btn.addEventListener("click", () => {
+        let headingElements = document.getElementsByTagName("h2");
+        alert(`The number of h2 elements on the page are ${headingElements.length}`)
+    })
+    /*
+    converting HTML collection to array
+    let headerElements = document.getElementsByTagName("h2");
+    let newArray = Array.from(headerElements);
+    newArray.forEach(element => {
+        console.log(element.textContent)
+   */
+</script>
+</body>
+</html>

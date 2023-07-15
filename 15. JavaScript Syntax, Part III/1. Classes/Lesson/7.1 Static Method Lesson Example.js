@@ -15,9 +15,10 @@ class HospitalEmployee {
     takeVacationDays(daysOff) {
         this._remainingVacationDays -= daysOff;
     }
+
     // added static method that will be called on classes not its instances
-    static generatePassword(){
-        return Math.floor(Math.random()*10000)
+    static generatePassword() {
+        return Math.floor(Math.random() * 10000)
     }
 }
 
@@ -36,7 +37,7 @@ class Nurse extends HospitalEmployee {
     }
 }
 
-const nurseOlynyk = new Nurse('Olynyk', ['Trauma','Pediatrics']); // assigning an array as an argument then for adding certification we use push above in addCertification()
+const nurseOlynyk = new Nurse('Olynyk', ['Trauma', 'Pediatrics']); // assigning an array as an argument then for adding certification we use push above in addCertification()
 nurseOlynyk.takeVacationDays(5);
 console.log(nurseOlynyk.remainingVacationDays);
 nurseOlynyk.addCertification('Genetics');

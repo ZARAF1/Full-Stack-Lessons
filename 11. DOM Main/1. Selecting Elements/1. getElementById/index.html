@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<p id="message">This is a paragraph</p>
+<p id="demo"></p>
+<script>
+    let messageParagraph = document.getElementById("message");
+    let anotherParagraph = document.getElementById("demo");
+    anotherParagraph.innerHTML = messageParagraph.innerHTML + "<----- Demo ";
+    console.log(messageParagraph)
+</script>
+</body>
+</html>

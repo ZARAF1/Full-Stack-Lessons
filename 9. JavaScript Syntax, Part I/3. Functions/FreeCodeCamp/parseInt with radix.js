@@ -1,5 +1,6 @@
 /*
-The parseInt() function parses a string and returns an integer. It takes a second argument for the radix, which specifies the base of the number in the string. The radix can be an integer between 2 and 36.
+The parseInt() function parses a string and returns an integer. It takes a second argument for the radix,
+which specifies the base of the number in the string. The radix can be an integer between 2 and 36.
 
 The function call looks like:
 
@@ -11,7 +12,9 @@ The radix variable says that 11 is in the binary system, or base 2. This example
 
 */
 function convertToInteger(str) {
-    return parseInt(str,2)
+    return parseInt(str, 2)
 }
 
-convertToInteger("10011");
+console.log(convertToInteger("007"));
+
+console.log(parseInt("1007", 3))

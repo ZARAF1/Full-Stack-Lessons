@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="mailto:ali.raffad@gmail.com" method="post">
+    <section id="text">
+        <label for="firstName">First Name</label><br>
+        <input type="text" name="firstName" id="firstName">
+    </section>
+    <br>
+    <section id="number">
+        <label for="age">Age</label><br>
+        <input type="number" id="age" name="age">
+    </section>
+    <section id="radio">
+        <h2>Choose your favorite meal</h2>
+        <label for="pizza_meal">Pizza</label>
+        <input type="radio" id="pizza_meal" name="fav_meal" value="Pizza">
+        <label for="biryani_meal">Biryani</label>
+        <input type="radio" id="biryani_meal" name="fav_meal" value="Biryani">
+        <label for="saver_meal">Saver</label>
+        <input type="radio" id="saver_meal" name="fav_meal" value="Saver">
+    </section>
+    <section class="cooked">
+        <label for="doneness"></label>
+        <span>Raw</span><input type="range" min="1" max="10" value="5" id="doneness"><span>Well Done</span>
+    </section>
+    <input type="submit">
+</form>
+</body>
+</html>
