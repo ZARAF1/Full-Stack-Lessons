@@ -31,25 +31,16 @@ checkButton.addEventListener('click', () => {
             console.log(highScore);
             highScoreDisplay.textContent = highScore;
         }
-    }
-    // if guessed number too low
-    else if (valueGuessed < randomNumber) {
+    } else if (valueGuessed !== randomNumber) {
         if (currentScore > 1) {
-            messageElement.textContent = 'Guessed number is Too Low 👇👇';
+            messageElement.textContent = valueGuessed < randomNumber ? 'Guessed number is Too Low 👇👇' : 'Guessed number is Too High ☝☝ ';
             currentScore--;
             scoreDisplay.textContent = currentScore;
         } else {
             messageElement.textContent = 'You lost the game 💥💣💥';
         }
-        // if guessed number too high
-    } else if (valueGuessed > randomNumber) {
-        if (currentScore > 1) {
-            messageElement.textContent = 'Guessed number is Too High ☝☝ ';
-            scoreDisplay.textContent = currentScore;
-        } else {
-            messageElement.textContent = 'You lost the game 💥💣💥';
-        }
     }
+
 });
 
 // again button functionality
