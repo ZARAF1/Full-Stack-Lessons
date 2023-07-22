@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul>
+      <li class="list-item">1</li>
+      <li class="list-item">2</li>
+      <li class="list-item">3</li>
+    </ul>
+    <button id="btn">Add List Item</button>
+    <script>
+      let listItems = document.querySelector('li');
+      console.log(listItems.parentElement);
+      /* how to add lists using a button */
+
+      // const ul = document.querySelector('ul');
+
+      // const button = document.getElementById('btn');
+
+      // button.addEventListener('click', () => {
+      //   const li = document.createElement('li');
+      //   const items = document.querySelectorAll('ul li');
+      //   let lastItemTextContent = Number(items[items.length - 1].textContent);
+      //   li.textContent = lastItemTextContent + 1;
+      //   ul.append(li);
+      // });
+
+      //// using append method
+
+      // const listItem4 = document.createElement('li');
+      // const listItem5 = document.createElement('li');
+
+      // listItem4.textContent = 4;
+      // listItem5.textContent = 5;
+      // ul.append(listItem4, listItem5);
+
+      //// using insertAdjacentHTML method
+      // ul.insertAdjacentHTML(
+      //   'beforeend',
+      //   `<li class="list-item">4</li>
+      //       <li class="list-item">5</li>`
+      // );
+    </script>
+  </body>
+</html>

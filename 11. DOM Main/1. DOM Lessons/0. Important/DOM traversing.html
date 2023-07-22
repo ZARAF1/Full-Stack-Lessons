@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>JS Get Child Elements</title>
+  </head>
+  <body>
+    <ul id="menu">
+      <li class="first">Home</li>
+      <li>Products</li>
+      <li class="current">Customer Support</li>
+      <li>Careers</li>
+      <li>Investors</li>
+      <li>News</li>
+      <li class="last">About Us</li>
+      <!-- -->
+    </ul>
+    <p>paragraph</p>
+    <script>
+      const parentNode = document.querySelector('li').parentNode;
+      console.log(
+        parentNode.firstElementChild.textContent,
+        parentNode.lastElementChild, // returns only element nodes
+        parentNode.firstChild // returns text because of spaces i,e., white, tab, returns
+      );
+      console.log(parentNode.childNodes); // returns all nodes
+      console.log(parentNode.children); // returns all element nodes
+      console.log(
+        parentNode.nextElementSibling, // returns next element sibling node
+        parentNode.previousElementSibling // returns null
+      );
+    </script>
+  </body>
+</html>
