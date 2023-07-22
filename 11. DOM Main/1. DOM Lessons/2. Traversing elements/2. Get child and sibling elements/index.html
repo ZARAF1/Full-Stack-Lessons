@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JS Get Child Elements</title>
+</head>
+<body>
+<ul id="menu">
+    <li class="first">Home</li>
+    <li>Products</li>
+    <li class="current">Customer Support</li>
+
+    <li>Careers</li>
+    <li>Investors</li>
+    <li>News</li>
+    <li class="last">About Us</li>
+</ul>
+<script>
+    let ul = document.getElementById('menu');
+    console.log(ul.firstChild) // #text
+    /*The Console window show #text because a text node is inserted to maintain the whitespace between the opening
+    <ul> and <li> tags. This whitespace creates a #text node.
+
+    Note that any whitespace such as a single space, multiple spaces, returns, and tabs will create a #text node.
+    To remove the #text node, you can remove the whitespaces as follows:
+
+    <article id="content"><h2>Heading</h2><p>First paragraph</p></article>*/
+
+    console.log(ul.firstElementChild) // to get the first node of type element only //li.first
+
+    console.log(ul.lastChild.nodeName) // same explanation as of firstChild
+
+    console.log(ul.lastElementChild) // to get the last node of type element //li.last
+
+    /*Get all child nodes*/
+    let childNodes = ul.childNodes;
+    console.log(childNodes) // [text, li.first, text, li, text, li.current, text, li, text, li, text, li, text, li.last, text]
+
+
+    /*Get all child elements*/
+
+    let childElements = ul.children;
+    console.log(childElements) //[li.first, li, li.current, li, li, li, li.last]
+
+    /*Get Next Element Sibling*/
+
+    let current = document.querySelector('.current');
+    console.log(current.nextElementSibling.textContent);
+
+    /*Get Previous Element Sibling*/
+    console.log(current.previousElementSibling.textContent)
+
+    /*Get next sibling node*/
+    console.log(current.nextSibling) // #text value is /n line break
+
+
+    // And the following example selects all the previous siblings of the list item that has the current class:
+
+
+</script>
+</body>
+</html>
