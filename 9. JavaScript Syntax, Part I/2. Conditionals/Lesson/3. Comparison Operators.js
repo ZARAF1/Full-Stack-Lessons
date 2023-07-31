@@ -42,7 +42,7 @@ console.log("18" == 18) // prints true
 // is not equal
 
 if (4 !== 5) {
-    console.log('true that')
+    console.log('true that 4 !== 5')
 } else {
     console.log('false')
 }

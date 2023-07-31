@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let script = document.createElement('script');
+    script.src = '/lib.js';
+    document.body.appendChild(script);
+
+    // or
+
+    function loadJS(url) {
+        let script = document.createElement('script');
+        script.src = url;
+        document.body.appendChild(script);
+    }
+
+    loadJS('/lib.js');
+
+    //or To load a JavaScript file asynchronously, you set the async attribute of the script element to true:
+
+    function loadJSAsync(url) {
+        let script = document.createElement('script');
+        script.src = url;
+        script.async = true;
+        document.body.appendChild(script);
+    }
+</script>
+</body>
+</html>

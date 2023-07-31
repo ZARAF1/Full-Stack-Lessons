@@ -5,13 +5,15 @@ const combineAll = (str1, ...otherStrings) => {
         }
         console.log(combinedString)
     */
+    let answer = str1;
     for (let str of otherStrings) {
-        str1 += str;
-        console.log(str1)
+        answer += str;
+        //console.log(str1)
     }
+    console.log(answer)
 }
 
-combineAll("h", "ello World")
+combineAll("h", "e", "l", "l", "o")
 
 const sumAll = (...otherNumbers) => {
     let total = 0;

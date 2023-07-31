@@ -33,5 +33,24 @@ function bar(x) {
 
 console.log(foo(0))
 console.log(bar(0))
+
 // foo(0) will return the string Less than one, and bar(0) will return the string Less than two.
 
+
+function foob(x) {
+    let answer = "";
+    switch (x) {
+        case x < 1:
+            answer = "x is smaller than 1";
+            break;
+        case x > 1:
+            answer = "x is greater than 1";
+            break;
+        default:
+            answer = "none matched"
+    }
+    return answer;
+
+}
+
+console.log(foob(2))

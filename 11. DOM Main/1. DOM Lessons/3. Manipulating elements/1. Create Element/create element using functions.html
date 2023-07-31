@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS CreateElement Demo</title>
+</head>
+<body>
+<script>
+    const createDiv = () => {
+        return document.createElement('div');
+    }
+
+    const bodyDiv = createDiv();
+
+    const setValues = (div, prop, value) => {
+        div[prop] = value;
+    }
+    setValues(bodyDiv, 'innerHTML', '<p>This is a paragraph1</p>')
+    setValues(bodyDiv, 'id', 'one')
+
+    document.body.appendChild(bodyDiv)
+
+</script>
+</body>
+</html>

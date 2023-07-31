@@ -34,7 +34,8 @@ The scoping works (somewhat) in block level as well. After introduction of the k
     }
 
 blockExample();
-As you might guess, accessing a block-local variable outside the block will not work. But this was/is not always the case: before let there was only var:
+As you might guess, accessing a block-local variable outside the block will not work. But this was/is not always the case:
+    before let there was only var:
 
 function blockExample() {
     let fLocalVar = "Hello from function scope";
