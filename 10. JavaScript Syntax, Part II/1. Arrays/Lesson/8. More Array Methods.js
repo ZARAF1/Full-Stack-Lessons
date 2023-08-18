@@ -1,11 +1,18 @@
-const groceryList = ['orange juice', 'bananas', 'coffee beans', 'brown rice', 'pasta', 'coconut oil', 'plantains'];
-groceryList.shift();// removes first element
+const groceryList = [
+  "orange juice",
+  "bananas",
+  "coffee beans",
+  "brown rice",
+  "pasta",
+  "coconut oil",
+  "plantains",
+];
+groceryList.shift(); // removes first element
 console.log(groceryList);
 let shiftedElement = groceryList.shift();
-console.log(shiftedElement)
+console.log(shiftedElement);
 
-
-groceryList.unshift('tea', 'brocolli') // adds first element / elements
+groceryList.unshift("tea", "brocolli"); // adds first element / elements
 
 console.log(groceryList);
 
@@ -16,4 +23,4 @@ const pastaIndex=groceryList.indexOf('pasta');
 console.log(pastaIndex)*/
 
 const slicedArray = groceryList.slice(0, 2);
-console.log(slicedArray)
+console.log(slicedArray);

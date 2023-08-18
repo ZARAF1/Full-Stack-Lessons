@@ -1,0 +1,37 @@
+/**  FOR LOOP */
+// looping over numbers
+for (let i = 5; i < 10; i++) {
+  console.log(i);
+}
+
+// reverse looping numbers
+for (let i = 3; i > 0; i--) {
+  console.log(i);
+}
+
+// iterating over strings
+const word = "Words are real";
+for (let i = 0; i < word.length; i++) {
+  console.log(word[i]);
+}
+
+// reverse looping strings
+for (let i = word.length - 1; i >= 0; i--) {
+  console.log(word[i]);
+}
+
+// iterating over arrays
+// Method 1 (for loop)
+let arr = ["1a", "2b", "3c"];
+for (let i = 0; i < arr.length; i++) {
+  console.log(arr[i]);
+}
+// Method 2 (for of loop on arrays and strings)
+const cities = ["Lahore", "Amman", "Helsinki"];
+const newWord = "Humma";
+for (city of cities) console.log(city);
+for (char of newWord) console.log(char);
+
+// Method 3 (for in loop over arrays and strings)
+for (idx in cities) console.log(cities[idx]);
+for (idx in newWord) console.log(newWord[idx]);
