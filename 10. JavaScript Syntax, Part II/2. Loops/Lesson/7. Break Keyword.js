@@ -26,11 +26,11 @@ const rapperArray = ["Lil' Kim", "Jay-Z", "Notorious B.I.G.", "Tupac"];
 // Write your code below
 let selectedRappers = [];
 for (let i = 0; i < rapperArray.length; i++) {
-    console.log(rapperArray[i]);
-    if (rapperArray[i] !== 'Notorious B.I.G.') {
-        selectedRappers.push(rapperArray[i]);
-    } else {
-        break;
-    }
+  //console.log(rapperArray[i]);
+  if (rapperArray[i] !== "Notorious B.I.G.") {
+    selectedRappers.push(rapperArray[i]);
+  } else {
+    break;
+  }
 }
-console.log(selectedRappers)
+console.log(selectedRappers);
