@@ -7,7 +7,7 @@ let val1 = 10;
 
 function fun1() {
   // local variable
-  val2 = 5;
+  var val2 = 5;
 }
 
 // Only change code above this line

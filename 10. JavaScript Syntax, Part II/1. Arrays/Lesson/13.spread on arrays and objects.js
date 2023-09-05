@@ -11,7 +11,8 @@ console.log(...arrayOfItems);
 // This comes in handy when a function expects a list of arguments and all you have is an array:
 
 const highestNumberInArray = Math.max(...arrayOfItems);
-console.log(highestNumberInArray);
+console.log({ highestNumberInArray });
+console.log('Math Max: ' + Math.max(1, 2, 3, 4, 5));
 
 const lowestNumberInArray = Math.min(...arrayOfItems);
 console.log(lowestNumberInArray);
@@ -21,24 +22,23 @@ console.log(lowestNumberInArray);
 
 const arrayA = [3, 2, 1];
 const arrayB = [...arrayA];
-console.log(arrayB)
+console.log(arrayB);
 
 //The spread syntax can also be used to compose several values into one:
-const arrayC = ["A", "B", "C"]
-const arrayD = [...arrayA, "Hello", ...arrayC];
-console.log(arrayD)
+const arrayC = ['A', 'B', 'C'];
+const arrayD = [...arrayA, 'Hello', ...arrayC];
+console.log(arrayD);
 
 //Merging Arrays
 const newArray1 = ['this', 'is', 'a'];
 const newArray2 = ['newly', 'merged', 'array'];
 const mergedArray = [...newArray1, ...newArray2];
-console.log(mergedArray)
+console.log(mergedArray);
 
 //These operations are not only available for arrays but also other iterables like strings:
 
-let testString = "hello";
+let testString = 'hello';
 console.log(...testString);
-
 
 /* OBJECTS */
 
@@ -49,17 +49,16 @@ Here we are spreading the user object. All key-value pairs are copied into the c
 */
 
 const user = {
-    name: 'Max',
-    age: 42
+  name: 'Max',
+  age: 42,
 };
 
-const clonedUser = {...user};
-console.log(clonedUser)
+const clonedUser = { ...user };
+console.log(clonedUser);
 
 // The spread syntax is useful for merging the properties and methods on objects into a new object:
 
-let objectX = {x: 1};
-let objectY = {y: 2};
-let objectXY = {...objectX, ...objectY, z: 3};
-console.log(objectXY)
-
+let objectX = { x: 1 };
+let objectY = { y: 2 };
+let objectXY = { ...objectX, ...objectY, z: 3 };
+console.log(objectXY);
