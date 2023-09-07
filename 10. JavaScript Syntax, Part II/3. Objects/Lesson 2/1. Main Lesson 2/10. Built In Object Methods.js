@@ -1,35 +1,23 @@
-/*const robot = {
-    model: 'SAL-1000',
-    mobile: true,
-    sentient: false,
-    armor: 'Steel-plated',
-    energyLevel: 75
-};
-
-// Object.keys()
-
-const robotKeys=Object.keys(robot)
-console.log(robotKeys)*/
-
 const robot = {
-    model: 'SAL-1000',
-    mobile: true,
-    sentient: false,
-    armor: 'Steel-plated',
-    energyLevel: 75
+  model: 'SAL-1000',
+  mobile: true,
+  sentient: false,
+  armor: 'Steel-plated',
+  energyLevel: 75,
+  languages: {
+    national: ['urdu', 'punjabi'],
+    international: ['english', 'french'],
+  },
 };
 // Object keys
-// What is missing in the following method call?`
+// returns the keys of the object in an array
 const robotKeys = Object.keys(robot);
+console.log({ robotKeys });
 
-console.log(robotKeys);
-
-//Object entries
-// Declare robotEntries below this line:
-const robotEntries = Object.entries(robot)
-
-console.log(robotEntries);
-
+// Object entries
+// return each key value pairs in array format nested within an array
+const robotEntries = Object.entries(robot);
+console.log({ robotEntries });
 
 //OBJECT assign
 // Declare newRobot below this line:
