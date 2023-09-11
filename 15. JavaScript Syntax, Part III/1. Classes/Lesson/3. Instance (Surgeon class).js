@@ -1,24 +1,23 @@
 class Surgeon {
-    constructor(name, department) {
-        this.name = name;
-        this.department = department;
-    }
+  constructor(name, department) {
+    this.name = name;
+    this.department = department;
+  }
 }
 
-const surgeonRomero = new Surgeon('Francisco Romero', 'Cardiovascular')
+const surgeonRomero = new Surgeon('Francisco Romero', 'Cardiovascular');
 
-const surgeonJackson = new Surgeon('Ruth Jackson', 'Orthopedics')
+const surgeonJackson = new Surgeon('Ruth Jackson', 'Orthopedics');
 
-const someSurgeon = new Surgeon;
-
+const someSurgeon = new Surgeon();
 
 console.log(surgeonRomero);
 console.log(surgeonJackson);
 console.log(someSurgeon);
 
 const person = {
-    name: "ali",
-    age: 40
-}
+  name: 'ali',
+  age: 40,
+};
 
-console.log(person)
+console.log(person);
