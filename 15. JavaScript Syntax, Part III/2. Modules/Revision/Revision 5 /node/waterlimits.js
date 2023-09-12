@@ -1,5 +1,15 @@
-function waterLimits(cel) {
-  return celsius * (9 / 5) + 32;
-}
+const converters = require('./converters.js');
+const { celsiusToFahrenheit, fahrenheitToCelsius } = converters;
 
-console.log(waterLimits(100));
+let boilingPointWaterInCel = 100;
+let freezingPointWaterInCel = 0;
+
+let outputBoilingPoint = `The boiling point of water in Celsius is ${celsiusToFahrenheit(
+  boilingPointWaterInCel
+)}`;
+console.log(outputBoilingPoint);
+
+let outputFreezingPoint = `The freezing point of water in Celsius is ${celsiusToFahrenheit(
+  freezingPointWaterInCel
+)}`;
+console.log(outputFreezingPoint);
