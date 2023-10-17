@@ -11,8 +11,8 @@ console.log('hello'.length);
 
 // slice a string JavaScript counts positions from zero. First position is 0. Second position is 1.
 
-let stringSlicedUp = stringOne.slice(0, 7); //  stringOne.slice(1, 7) gives us "his is"
-console.log({ stringSlicedUp });
+let slicedString = stringOne.slice(0, 7); //  stringOne.slice(1, 7) gives us "his is"
+console.log({ slicedString });
 
 //// If you omit the second parameter, the method will slice out the rest of the string
 let sliceWithNoSecondArgument = stringOne.slice(7);
@@ -24,7 +24,7 @@ let negativeSlicingSingleArgument = stringOne.slice(-6); //If a parameter is neg
 console.log({ negativeSlicingSingleArgument });
 
 // This example slices out a portion of a string from position -10 to position -6:
-let negativeSlicingTwoArguments = stringOne.slice(-10, -6);
+let negativeSlicingTwoArguments = stringOne.slice(-10, -6); // let stringOne = 'This is a string';
 console.log({ negativeSlicingTwoArguments });
 
 /* SUBSTRING */
@@ -38,6 +38,7 @@ console.log({ subStringOne });
 // subStr()
 let newSubStrExample = stringOne.substr(6, 3);
 console.log({ newSubStrExample });
+
 /* REPLACE */
 // Note
 // The replace() method does not change the string it is called on.
@@ -60,15 +61,13 @@ console.log({ newTextCaseSensitivity });
 // To replace all instances
 // using /g flag
 let someString =
-  'This is some string of text. While some text appears different';
-let allString = someString.replace(/some/g, 'ALL');
+  'This is Some string of text. While some text appears different';
+let allString = someString.replace(/some/gi, 'ALL');
 console.log(allString);
 
-// using replaceAll()
-let replaceAllInstances = 'I love cats and cats love me'.replaceAll(
-  'cats',
-  'CATS'
-);
+// using replaceAll() // doesnt work in some node versions
+let catText = 'I love cats and cats love me';
+let replaceAllInstances = catText.replaceAll('cats', 'Cats');
 console.log({ replaceAllInstances });
 
 //
@@ -118,7 +117,7 @@ console.log(textToPad.padEnd(3, 'C'));
 let numberToPad = 4;
 
 // first convert number to string
-let stringFromNumber = numberToPad.toString();
+let stringFromNumber = numberToPad.toString(); // or use String(numberToPad)
 stringFromNumber = stringFromNumber.padEnd(6, '0');
 console.log(stringFromNumber);
 let paddedNumber = Number(stringFromNumber);
