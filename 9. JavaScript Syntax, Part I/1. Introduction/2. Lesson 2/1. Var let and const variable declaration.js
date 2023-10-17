@@ -1,16 +1,17 @@
-// creating a variable with var
+// declaring, re-declaring and updating a variable with var
 var favoriteFood = 'pizza';
-var numOfSlices = 8;
-favoriteFood = "marshmallow";
+var favoriteFood = 'naan';
 console.log(favoriteFood);
-console.log(numOfSlices)
-
+favoriteFood = 'marshmallow';
+console.log(favoriteFood);
+var favoriteDrink;
+console.log(favoriteDrink);
 // create variable using let
 let changeMe = true;
 changeMe = false;
 console.log(changeMe);
 changeMe = 0;
-console.log({changeMe})
+console.log({ changeMe });
 
 // creating a variable using const
 const myName = 'Ali';
