@@ -1,4 +1,4 @@
-// POST Increment: The operator returns the initial variable value first  then only value of variable will incremented by 1.
+// POST Increment: The operator returns the initial variable value first  then only value of variable will incremented by 1 (while printing to the console).
 num = 1;
 console.log(num++); // prints the value of num does not increment
 console.log({ num }); // now the value of
@@ -16,8 +16,8 @@ let lostDollar = 50;
 gainedDollar++;
 lostDollar--;
 console.log('Dollar Gained ' + gainedDollar);
-console.log(lostDollar);
+console.log('Dollar Lost ' + lostDollar);
 
 // pre increment example
 ++gainedDollar;
-console.log('Dollar Gained ' + gainedDollar);
+console.log('Dollar Gained Again' + gainedDollar);
