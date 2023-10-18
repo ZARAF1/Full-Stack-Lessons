@@ -9,24 +9,21 @@ Here are the classifications:
 65-140 should return 'senior citizen'
 If the number is less than 0 or greater than 140, the program should return 'This is not a valid age'
 * */
-const lifePhase =(age)=>{
-    if (age < 4){
-        return 'baby';
-    }
-    else if(age <13){
-        return `child`;
-    }
-    else if (age<20){
-        return `teen`;
-    }
-    else if(age<65){
-        return `adult`
-    }
-    else if(age<141){
-        return `senior adult`
-    }
-    else if(age<0 || age>140){
-        return `Age is not valid`
-    }
-}
-console.log(lifePhase(141))
+const lifePhase = age => {
+  if (age <= 0) {
+    return `Please input age > 0`;
+  } else if (age < 4) {
+    return 'baby';
+  } else if (age < 13) {
+    return `child`;
+  } else if (age < 20) {
+    return `teen`;
+  } else if (age < 65) {
+    return `adult`;
+  } else if (age < 141) {
+    return `senior adult`;
+  } else if (age < 0 || age > 140) {
+    return `Age is not valid`;
+  }
+};
+console.log(lifePhase(1));
