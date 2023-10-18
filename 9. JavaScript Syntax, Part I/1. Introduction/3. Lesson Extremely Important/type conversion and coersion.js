@@ -51,15 +51,16 @@ console.log({ testVal2 }, typeof testVal2);
 */
 // Example 3:
 // The Boolean value true is converted to number 1 and then operation is performed
-var truePlusTwo = true + 2;
+let truePlusTwo = true + 2;
 
 // The Boolean value false is
 // converted to number 0 and
 // then operation is performed
-var falsePlusTwo = false + 2;
+let falsePlusTwo = false + 2;
 
 console.log(truePlusTwo);
 console.log(falsePlusTwo);
+console.log(false - 5);
 
 /**
 4. The Equality Operator: The equality operator (==) can be used to compare values irrespective of their type. This is done by coercing a non-number data type to a number. Some examples of this are shown below:
@@ -104,8 +105,7 @@ let testVal5 = 'jonas';
 console.log(Number(testVal5)); // NaN because jonas cant be converted to a number;
 
 /*****
- To understand the concept of Truth and Falsy values lets try to convert five falsy values to boolean to see why the act
- like that in if else statement
+ To understand the concept of Truth and Falsy values lets try to convert five falsy values to boolean to see why the act like that in if else statement
 
 
  */
