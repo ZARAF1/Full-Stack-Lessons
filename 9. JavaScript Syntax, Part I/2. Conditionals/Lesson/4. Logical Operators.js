@@ -1,7 +1,7 @@
 /*Logical AND ( && ) */
 // logical && (both conditions should evaluate to true for the code to execute)
 let stoplight = 'green';
-let bypassers = 0;
+let bypassers = 1;
 
 if (stoplight === 'green' && bypassers === 0) {
   console.log('go');
@@ -14,7 +14,7 @@ stoplight === 'green' && bypassers === 0
   ? console.log('go man go')
   : console.log('stop man stop');
 console.log(stoplight === 'green' && bypassers === 0);
-console.log()'>>>');
+console.log();
 
 /*logical OR ( || )*/
 // only one condition should evaluate to true for the entire condition to evaluate to true
