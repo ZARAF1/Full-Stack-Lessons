@@ -5,10 +5,10 @@ const combineAll = (str1, ...otherStrings) => {
         }
         console.log(combinedString)
     */
+  // console.log(otherStrings);
   let answer = str1;
   for (let str of otherStrings) {
     answer += str;
-    //console.log(str1)
   }
   console.log(answer);
 };
