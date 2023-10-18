@@ -11,15 +11,14 @@ if (username) {
 
 */
 // Short circuit evaluation of above example
-let username=''
+let username = ''; // as this value is falsy default name underneath will have Stranger as its value as JS only processes the first value if its true in short cut evaluation.
 let defaultName = username || 'Stranger';
-console.log(defaultName)
-
+console.log(defaultName);
 
 // another example
-let sale="time to buy";
-let decision=sale||'time to wait'
-console.log(decision)
+let sale = 'time to buy';
+let decision = sale || 'time to wait';
+console.log(decision);
 
 /*
 // above example elaborated
