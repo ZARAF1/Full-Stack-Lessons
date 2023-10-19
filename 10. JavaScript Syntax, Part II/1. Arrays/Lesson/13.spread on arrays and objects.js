@@ -33,7 +33,7 @@ console.log(arrayD);
 const newArray1 = ['this', 'is', 'a'];
 const newArray2 = ['newly', 'merged', 'array'];
 const mergedArray = [...newArray1, ...newArray2];
-console.log(mergedArray);
+console.log({ mergedArray });
 
 //These operations are not only available for arrays but also other iterables like strings:
 
