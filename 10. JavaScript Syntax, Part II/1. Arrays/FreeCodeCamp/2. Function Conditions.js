@@ -1,20 +1,19 @@
 function tstCond(condition) {
-    if (condition) {
-        return true;
-    } else {
-        return false;
-    }
-
+  if (condition) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
-console.log(tstCond(5 < 6))
+console.log(tstCond(5 < 6));
 
 // second example
 function test(myCondition) {
-    if (myCondition) {
-        return "It was true";
-    }
-    return "It was false";
+  if (myCondition) {
+    return 'It was true';
+  }
+  return 'It was false';
 }
 
 console.log(test(true));
