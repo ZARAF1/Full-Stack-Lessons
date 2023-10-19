@@ -197,66 +197,79 @@ Understand the benefits of for...of.
 const hobbies = ['singing', 'eating', 'quidditch', 'writing'];
 
 for (let i = 0; i < hobbies.length; i++) {
-    console.log(`I enjoy ${hobbies[i]}`)
+  console.log(`I enjoy ${hobbies[i]}`);
 }
 
 // above example in for of loop
 
 for (const hobby of hobbies) {
-    console.log(`I enjoy ${hobby}`)
+  console.log(`I enjoy ${hobby}`);
 }
 
 // another example for of loop
 
 const fruits = ['oranges', 'apples', 'grapes'];
 for (const fruit of fruits) {
-    console.log(`I love ${fruit}`)
+  console.log(`I love ${fruit}`);
 }
 
 // iterating through a string using for loop
 
 let greeting = 'Hello World!';
 for (let i = 0; i < greeting.length; i++) {
-    console.log(`${greeting[i]}`)
+  console.log(`${greeting[i]}`);
 }
 
 // iterating through string using for of loop
-let sayHi = 'Hello to you!'
+let sayHi = 'Hello to you!';
 for (const char of sayHi) {
-    console.log(`${char}`)
+  console.log(`${char}`);
 }
 
 // using break in for of loop
-const strangeBirds = ['Shoebill', 'Cockatrice', 'Basan', 'Terrorbird', 'Parotia', 'Kakapo'];
+const strangeBirds = [
+  'Shoebill',
+  'Cockatrice',
+  'Basan',
+  'Terrorbird',
+  'Parotia',
+  'Kakapo',
+];
 for (let bird of strangeBirds) {
-    if (bird === 'Basan') {
-        break;
-    }
-    console.log(bird)
+  if (bird === 'Basan') {
+    break;
+  }
+  console.log(bird);
 }
 
 // using ocntinue in for of loop
 
-const strangeBird = ['Shoebill', 'Cockatrice', 'Basan', 'Terrorbird', 'Parotia', 'Kakapo'];
+const strangeBird = [
+  'Shoebill',
+  'Cockatrice',
+  'Basan',
+  'Terrorbird',
+  'Parotia',
+  'Kakapo',
+];
 for (let bird of strangeBird) {
-    if (bird === 'Basan') {
-        continue;
-    }
-    console.log(bird)
+  if (bird === 'Basan') {
+    continue;
+  }
+  console.log(bird);
 }
 
 // for of loop can not be used to reverse numbering or reverse printing element of an array
 
 let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 for (let i = arr.length - 1; i >= 0; i--) {
-    console.log(arr[i])
+  console.log(arr[i]);
 }
-
 
 // another example
 const spellingWord = 'hippopotamus';
 
 // Write your code below
-for (const word of spellingWord) {
-    console.log(word)
+for (const char of spellingWord) {
+  console.log(char);
 }
