@@ -32,17 +32,14 @@ The reassignment inside logNum() affects the global variable num.
     Even though the reassignment is allowed and we won’t get an error, if we decided to use num later, we’ll unknowingly use the new value of num.
     While it’s important to know what global scope is, it’s best practice to not define variables in the global scope.*/
 
-
 const satellite = 'The Moon';
 const galaxy = 'The Milky Way';
 let stars = 'North Star';
 
 const callMyNightSky = () => {
-    stars = 'Sirius';
-    return 'Night Sky: ' + satellite + ', ' + stars + ', ' + galaxy;
+  let stars = 'Sirius';
+  return 'Night Sky: ' + satellite + ', ' + stars + ', ' + galaxy;
 };
 
 console.log(callMyNightSky());
-console.log(stars)
-
-
+console.log(stars);
