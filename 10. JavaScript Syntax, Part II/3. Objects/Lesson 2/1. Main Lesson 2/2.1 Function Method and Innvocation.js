@@ -1,6 +1,5 @@
 /*Function and method invocations
-To get back into JavaScript world, and still keeping the previous analogy in mind, let us start with the previously
-introduced person object:
+To get back into JavaScript world, and still keeping the previous analogy in mind, let us start with the previously introduced person object:
 
 const person = {
     firstName: "Stacy",
@@ -87,3 +86,32 @@ let anotherHuman = {
 };
 console.log(anotherHuman.message());
 console.log(anotherHuman.anotherMessage());
+
+let catBreed = {
+  breed_name: 'pur pur',
+  breed_age: '8',
+  breed_height: 20,
+  introduction: function () {
+    console.log(
+      `My name is ${this.breed_name}, i live to the max of ${this.breed_age} years. I grow to be ${this.breed_height} tall. Ah need no more info i am an animal`
+    );
+  },
+};
+catBreed.introduction();
+
+let dogBreed = {
+  breed_name: 'bow wow',
+  breed_age: '10',
+  breed_height: 40,
+  introduction: catBreed.introduction,
+};
+
+dogBreed.introduction();
+// indirection invocation and binding
+
+let introduction = catBreed.introduction;
+introduction.apply(dogBreed);
+introduction.call(dogBreed);
+
+let introducedCat = catBreed.introduction.bind(catBreed);
+introduced();
