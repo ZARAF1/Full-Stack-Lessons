@@ -22,5 +22,5 @@ console.log({ clonedUser });
 const x = { x: 1 };
 const y = { y: 2 };
 
-const coord = { ...x, ...y, ...user };
+const coord = { ...x, ...y, ...user, xyz: 345 };
 console.log(coord);
