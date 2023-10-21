@@ -40,20 +40,21 @@ Note: You will need to place a comma after every object in the array, unless it 
 * */
 
 var myMusic = [
-    {
-        "artist": "Billy Joel",
-        "title": "Piano Man",
-        "release_year": 1973,
-        "formats": ["CD","8T","LP"],
-        "gold": true
-    },
-    {
-        "artist": "Michael Jackson",
-        "title": "Billy Jeans",
-        "release_year": 1983,
-        "formats": ["CD","8T","LP"]
-
-    }
+  {
+    artist: 'Billy Joel',
+    title: 'Piano Man',
+    release_year: 1973,
+    formats: ['CD', '8T', 'LP'],
+    gold: true,
+  },
+  {
+    artist: 'Michael Jackson',
+    title: 'Billy Jeans',
+    release_year: 1983,
+    formats: ['CD', '8T', 'LP'],
+  },
 ];
 
-console.log(`${myMusic[1].artist} is my Favorite Artist. His song ${myMusic[1].title} is out of the world!`)
+console.log(
+  `${myMusic[1].artist} is my Favorite Artist. While ${myMusic[0].artist}'s song ${myMusic[0].title} is out of the world!`
+);
