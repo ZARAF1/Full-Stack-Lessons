@@ -5,5 +5,5 @@ class Surgeon {
   }
 }
 
-const romero = new Surgeon("Agent Romero", "Aptech");
-console.log(romero);
+const romero = new Surgeon('Agent Romero', 'Aptech');
+console.log(romero.name);
