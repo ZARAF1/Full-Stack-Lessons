@@ -5,7 +5,7 @@ class Animal {
   }
 
   static generateName() {
-    const names = ["Angel", "Spike", "Buffy", "Willow", "Tara"];
+    const names = ['Angel', 'Spike', 'Buffy', 'Willow', 'Tara'];
     const randomNumber = Math.floor(Math.random() * names.length);
     return names[randomNumber];
   }
@@ -26,7 +26,7 @@ class Cat extends Animal {
 // console.log(Cat.generateName())
 
 // wont work on instances
-const cattie = new Cat("Cattie", true);
+const cattie = new Cat('Cattie', true);
 //cattie.generateName()
 cattie.setName();
 console.log(cattie._name);
